@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Transforms | Inertia Docs"
+})
+<body>
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top",
+    "boxed": false,
+    "logo": "../assets/img/svg/logo-docs.svg"
+  })
+
+  <div class="container-fluid container-docs">
+    <div class="row">
+      @@include('../partials/docs-sidebar.html')
+
+      <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6">
+        <h3 class="text-darkblue">
+          Transforms
+        </h3>
+        <div class="card border border-gray-100 mt-4">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div class="img-skew img-skew-right">
+                <img src="../assets/img/devices/1.png" class="img-fluid img-skew-pic" style="width: 180px;" alt="">
+              </div>
+              <div>
+                <img src="../assets/img/devices/1.png" class="img-fluid" style="width: 180px;" alt="">
+              </div>
+              <div class="img-skew img-skew-left">
+                <img src="../assets/img/devices/1.png" class="img-fluid img-skew-pic" style="width: 180px;" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;div class="img-skew img-skew-right"><br>
+                &nbsp;&nbsp;&lt;img src="../assets/img/devices/1.png" class="img-fluid img-skew-pic""><br>
+              &lt;/div><br><br>
+              &lt;img src="../assets/img/devices/1.png" class="img-fluid""><br><br>
+              &lt;div class="img-skew img-skew-left"><br>
+                &nbsp;&nbsp;&lt;img src="../assets/img/devices/1.png" class="img-fluid img-skew-pic""><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
+        <div class="card border border-gray-100 my-6">
+          <div class="card-body d-flex justify-content-between">
+            <div>
+              <img src="../assets/img/devices/1.png" class="img-fluid flip-x" style="width: 180px;" alt="">
+            </div>
+            <div>
+              <img src="../assets/img/devices/1.png" class="img-fluid" style="width: 180px;" alt="">
+            </div>
+            <div>
+              <img src="../assets/img/devices/1.png" class="img-fluid flip-y" style="width: 180px;" alt="">
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;img src="../assets/img/devices/1.png" class="img-fluid flip-x""><br>
+              &lt;img src="../assets/img/devices/1.png" class="img-fluid""><br>
+              &lt;img src="../assets/img/devices/1.png" class="img-fluid flip-y"">
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

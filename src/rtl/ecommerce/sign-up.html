@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+@@include('../../partials/header.html', {
+  "title": "Sign up | Inertia"
+})
+<body class="rtl bg-light">
+  @@include('../../partials/navbar-ecommerce-rtl.html')
+
+  <section class="mt-7 fx-fade-in">
+    <div class="container border-bottom border-gray-200 pb-7">
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-lg-5">
+          <h3 class="text-center font-weight-normal">
+            Create your account
+          </h3>
+
+          <form class="text-right mt-4">
+            <div class="mb-3">
+              <label class="form-label">Your email</label>
+              <input type="email" class="form-control border-gray-200">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Full name</label>
+              <input type="email" class="form-control border-gray-200">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control border-gray-200">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Confirm Password</label>
+              <input type="password" class="form-control border-gray-200">
+            </div>
+
+            <div class="mb-3">
+              <div class="form-check font-size-sm mt-4">
+                <input type="checkbox" class="form-check-input" id="customCheck1">
+                <label class="form-check-label" for="customCheck1">
+                  I've read & agree with <a href="#">the terms</a>.
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-block hover-lift-light mt-4">
+              Create account
+            </button>
+
+            <div class="font-size-sm text-center text-muted mt-5">
+              Already have an account? <a href="sign-in.html">Sign in</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../../partials/footer.html', { "classList": "footer footer-light bg-light mt-5" })
+  @@include('../../partials/scripts.html')
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Account Notifications | Inertia"
+})
+<body class="bg-light">
+  @@include('./partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white shadow-light-sm",
+    "boxed": true
+  })
+
+  <!-- Title -->
+  <div class="text-center text-md-left mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-darkblue">
+            My Account
+          </h2>
+          <p class="lead text-darkblue">
+            erick@cedarthemes.com
+          </p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="#" class="btn btn-outline-success hover-lift-light">
+            Sign out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 pl-5">
+        <!-- Sidebar -->
+        <h6 class="text-uppercase-bold-sm text-muted mt-md-4 mb-3">
+          Settings
+        </h6>
+        <ul class="list text-darkblue">
+          <li class="list-item">
+            <a class="text-reset" href="account-general.html">
+              General
+            </a>
+          </li>
+          <li class="list-item active">
+            <a class="text-reset" href="account-notifications.html">
+              Notifications
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="text-reset" href="account-billing.html">
+              Billing & Payments
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="text-reset" href="account-teammates.html">
+              Teammates
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <!-- Main content -->
+        <div class="card shadow-sm">
+          <div class="card-header bg-white py-4">
+            <h5 class="text-darkblue m-0">
+              Account notifications
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="row g-0 border-bottom border-gray-200 pb-4">
+              <div class="col">
+                Someone mentions me with a <span class="text-purple">@mention</span>
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch1" data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch1"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 border-bottom border-gray-200 py-4">
+              <div class="col">
+                Someone accepts my invitation
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch2" checked data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch2"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 border-bottom border-gray-200 py-4">
+              <div class="col">
+                Important updates of activity you've missed
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch3" checked data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch3"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 pt-4">
+              <div class="col">
+                Receive security alert notifications
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch4" data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch4"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mt-5">
+          <div class="card-header bg-white py-4">
+            <h5 class="text-darkblue m-0">
+              Marketing notifications
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="row g-0 border-bottom border-gray-200 pb-4">
+              <div class="col">
+                Suscribe to offers and discounts
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch5" checked="" data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch5"></label>
+                </div>
+              </div>
+            </div>
+            <div class="row g-0 align-items-center border-bottom border-gray-200 py-4">
+              <div class="col">
+                Receive the newsletter
+              </div>
+              <div class="col-auto">
+                <select class="form-select">
+                  <option>Daily</option>
+                  <option>Weekly</option>
+                  <option>Monthly</option>
+                  <option>Unsuscribe</option>
+                </select>
+              </div>
+            </div>
+            <div class="row g-0 pt-4">
+              <div class="col">
+                Product updates
+              </div>
+              <div class="col-auto">
+                <div class="form-check form-switch">
+                  <input type="checkbox" class="form-check-input" id="switch6" data-toggle="switch-prices">
+                  <label class="form-check-label" for="switch6"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  @@include('./partials/footer.html', { "classList": "footer footer-dark bg-dark py-7 mt-9" })
+  @@include('./partials/scripts.html')
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Contact alt | Inertia"
+})
+<body>
+  @@include('./partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100",
+    "boxed": true
+  })
+
+  <!-- Hero -->
+  <section class="bg-cover h-md-400 d-flex align-items-center overlay overlay-dark overlay-70" style="background-image: url('assets/img/unsplash/80.jpeg');">
+    <div class="container">
+      <div class="row text-center mt-5 py-6 py-md-0">
+        <!-- Email -->
+        <div class="col-md-4 fx-fade-up animation-delay-1">
+          <div class="svg-icon svg-icon-lg text-white">
+            @@include("assets/img/stockholm/Communication/Mail-opened.svg")
+          </div>
+          <h4 class="text-white font-weight-normal mt-3">
+            Send us an email
+          </h4>
+          <a href="#!" class="text-white lead mt-1">
+            info@cedarthemes.com
+          </a>
+        </div>
+
+        <!-- Call -->
+        <div class="col-md-4 mt-4 mt-md-0 fx-fade-up animation-delay-5">
+          <div class="svg-icon svg-icon-lg text-white">
+            @@include("assets/img/stockholm/Communication/Incoming-call.svg")
+          </div>
+          <h4 class="text-white font-weight-normal mt-3">
+            Give us a call
+          </h4>
+          <a href="#!" class="text-white lead mt-1">
+            01 800 555-3421
+          </a>
+        </div>
+
+        <!-- Twitter -->
+        <div class="col-md-4 mt-4 mt-md-0 fx-fade-up animation-delay-9">
+          <div class="svg-icon svg-icon-lg text-white">
+            @@include("assets/img/ionicons/logo-twitter.svg")
+          </div>
+          <h4 class="text-white font-weight-normal mt-3">
+            Reach on Twitter
+          </h4>
+          <a href="#!" class="text-white lead mt-1">
+            @Inertiasupport
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section class="bg-light pt-6 pt-lg-7 pb-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3 class="mt-lg-2">
+            Contact our support team
+          </h3>
+          <p class="text-muted mt-3">
+            We'd love to hear from you, please send a message and we'll get back to you as soon as possible.
+          </p>
+        </div>
+
+        <div class="col-lg-7 offset-lg-1 mt-4 mt-lg-0">
+          <form>
+            <div class="row">
+              <div class="col-sm">
+                <div class="mb-3">
+                  <label class="form-label text-dark">
+                    First name
+                  </label>
+                  <input type="text" class="form-control form-control-lg border-gray-200">
+                </div>
+              </div>
+              <div class="col-sm">
+                <div class="mb-3">
+                  <label class="form-label text-dark">
+                    Last name
+                  </label>
+                  <input type="text" class="form-control form-control-lg border-gray-200">
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Email address
+              </label>
+              <input type="email" class="form-control form-control-lg border-gray-200">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Phone number
+              </label>
+              <input type="phone" class="form-control form-control-lg border-gray-200">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-dark">
+                Your message
+              </label>
+              <textarea rows="6" class="form-control form-control-lg border-gray-200"></textarea>
+            </div>
+            <div class="text-center mt-5">
+              <input type="submit" value="Send Message" class="btn btn-success btn-lg hover-lift-light w-200">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('./partials/footer.html', { "classList": "footer footer-dark bg-dark" })
+  @@include('./partials/scripts.html')
+</body>
+</html>

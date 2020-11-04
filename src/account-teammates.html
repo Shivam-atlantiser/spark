@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Account Teammates | Inertia"
+})
+<body class="bg-light">
+  @@include('./partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white shadow-light-sm",
+    "boxed": true
+  })
+
+  <!-- Title -->
+  <div class="text-center text-md-left mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-darkblue">
+            My Account
+          </h2>
+          <p class="lead text-darkblue">
+            erick@cedarthemes.com
+          </p>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <a href="#" class="btn btn-outline-success hover-lift-light">
+            Sign out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container mt-5">
+    <div class="row">
+      <div class="col-md-3 pl-5">
+        <!-- Sidebar -->
+        <h6 class="text-uppercase-bold-sm text-muted mt-md-4 mb-3">
+          Settings
+        </h6>
+        <ul class="list text-darkblue">
+          <li class="list-item">
+            <a class="text-reset" href="account-general.html">
+              General
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="text-reset" href="account-notifications.html">
+              Notifications
+            </a>
+          </li>
+          <li class="list-item">
+            <a class="text-reset" href="account-billing.html">
+              Billing & Payments
+            </a>
+          </li>
+          <li class="list-item active">
+            <a class="text-reset" href="account-teammates.html">
+              Teammates
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-9">
+        <!-- Main content -->
+        <div class="card shadow-sm">
+          <div class="card-header bg-white py-4">
+            <div class="row align-items-center">
+              <div class="col">
+                <h5 class="text-darkblue m-0">
+                  8 Teammates
+                </h5>
+              </div>
+              <div class="col-auto">
+                <a href="#" class="btn btn-sm btn-primary hover-lift-light">Invite new</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/12.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      Joan Didion
+                    </div>
+                    <span class="text-muted">
+                      joan@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option>Staff</option>
+                  <option>Designer</option>
+                  <option>Developer</option>
+                </select>
+              </li>
+
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/1.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      Ernest Hemingway
+                    </div>
+                    <span class="text-muted">
+                      ernest@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option selected>Staff</option>
+                  <option>Designer</option>
+                  <option>Developer</option>
+                </select>
+              </li>
+
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/2.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      William Shakespeare
+                    </div>
+                    <span class="text-muted">
+                      william@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option>Staff</option>
+                  <option selected>Designer</option>
+                  <option>Developer</option>
+                </select>
+              </li>
+
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      Virginia Woolf
+                    </div>
+                    <span class="text-muted">
+                      virginia@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option>Staff</option>
+                  <option>Designer</option>
+                  <option selected>Developer</option>
+                </select>
+              </li>
+
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/6.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      Marcel Proust
+                    </div>
+                    <span class="text-muted">
+                      marcel@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option>Staff</option>
+                  <option>Designer</option>
+                  <option>Developer</option>
+                </select>
+              </li>
+
+              <li class="list-group-item d-md-flex align-items-center">
+                <div class="d-flex flex-wrap align-items-center">
+                  <div class="avatar avatar-lg mr-3">
+                    <img src="assets/img/uifaces/10.jpg" class="avatar-image rounded-circle" alt="">
+                  </div>
+                  <div class="flex-1 mt-3 mt-md-0">
+                    <div class="font-weight-bold">
+                      Mark Twain
+                    </div>
+                    <span class="text-muted">
+                      mark@cedarthemes.com
+                    </span>
+                  </div>
+                </div>
+
+                <select class="form-select w-150 ml-md-auto mt-3 mt-md-0">
+                  <option>Admin</option>
+                  <option selected>Staff</option>
+                  <option>Designer</option>
+                  <option>Developer</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  @@include('./partials/footer.html', { "classList": "footer footer-dark bg-dark py-7 mt-9" })
+  @@include('./partials/scripts.html')
+</body>
+</html>

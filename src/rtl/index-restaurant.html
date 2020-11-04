@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Landing restaurant | Inertia"
+})
+<body class="rtl">
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100",
+    "boxed": true,
+    "rtl": true
+  })
+
+  <!-- Hero -->
+  <section class="bg-light position-relative overlay overlay-dark overlay-30 py-10 py-lg-12 jarallax" data-jarallax data-speed="0.8" style="background-image: url('../assets/img/unsplash/29.jpeg');">
+    <img src="../assets/img/unsplash/29.jpeg" class="d-none"><!-- for eager load -->
+
+    <div class="container text-center">
+      <h1 class="display-3 text-white text-uppercase letter-spacing-xxl fx-fade-up animation-delay-2">
+        The Inertia Bar
+      </h1>
+      <p class="text-white text-uppercase-bold-sm mt-3 fx-fade-up animation-delay-4">
+        Comfort, Wine & Grill
+      </p>
+    </div>
+
+    <div class="position-absolute w-100 bottom-0 mb-5">
+      <div class="container text-white text-uppercase-bold-sm text-center text-lg-left">
+        <div class="float-lg-left">
+          56 Avenue South, London 66490
+        </div>
+        <div class="float-lg-right mt-3 mt-lg-0">
+          Breakfast, Meals & Dinner
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="container mt-7 mt-md-8">
+    <div class="row align-items-center">
+      <!-- Collage -->
+      <div class="col-lg-7 offset-lg-1">
+        <div class="row">
+          <div class="col-6">
+            <a href="../assets/img/unsplash/30.jpeg" class="d-block hover-lift-light" data-fancybox="gallery1">
+              <img src="../assets/img/unsplash/30.jpeg" class="rounded img-fluid" alt="">
+            </a>
+            <a href="../assets/img/unsplash/31.jpeg" class="d-block hover-lift-light mt-4" data-fancybox="gallery1">
+              <img src="../assets/img/unsplash/31.jpeg" class="rounded img-fluid" alt="">
+            </a>
+          </div>
+
+          <div class="col-6 pt-5">
+            <a href="../assets/img/unsplash/32.jpeg" class="d-block hover-lift-light" data-fancybox="gallery1">
+              <img src="../assets/img/unsplash/32.jpeg" class="rounded img-fluid" alt="">
+            </a>
+            <a href="../assets/img/unsplash/33.jpeg" class="d-block hover-lift-light mt-4" data-fancybox="gallery1">
+              <img src="../assets/img/unsplash/33.jpeg" class="rounded img-fluid" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro -->
+      <div class="col-lg-4 text-right mt-5 mt-lg-0">
+        <div class="svg-icon svg-icon-xl text-darkblue">
+          @@include("../assets/img/stockholm/Cooking/Knife&fork-2.svg")
+        </div>
+        <h4 class="text-uppercase letter-spacing-lg line-height-lg mt-4">
+          Comfort meets friendship
+        </h4>
+        <p class="text-secondary mt-4">
+          I would like to take the opportunity to write an introduction in this section. I live in the beautiful city of Amsterdam with my family.
+        </p>
+        <p class="text-secondary mt-4">
+          My friend and I started this restaurant back in 2005. We've received 2 michelin stars since, it truly has been an adventure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meals -->
+  <section class="row g-0 mt-8 mt-md-9">
+    <div class="col-md-4 hover-mask h-300 h-md-500">
+      <div class="hover-mask-image overlay overlay-dark overlay-20 jarallax" data-jarallax data-speed="0.8" style="background-image: url('../assets/img/unsplash/34.jpeg');"></div>
+
+      <!-- Lunch -->
+      <div class="hover-mask-content d-flex justify-content-center align-items-center opacity-100">
+        <h4 class="text-white text-center text-uppercase letter-spacing-lg border-top border-bottom border-2 py-3">
+          Morning Lunches
+        </h4>
+      </div>
+    </div>
+
+    <!-- Meal -->
+    <div class="col-md-4 hover-mask h-300 h-md-500">
+      <div class="hover-mask-image overlay overlay-dark overlay-10 jarallax" data-jarallax data-speed="0.8" style="background-image: url('../assets/img/unsplash/35.jpeg');"></div>
+
+      <div class="hover-mask-content d-flex justify-content-center align-items-center opacity-100">
+        <h4 class="text-white text-center text-uppercase letter-spacing-lg border-top border-bottom border-2 py-3">
+          Midday Meals
+        </h4>
+      </div>
+    </div>
+
+    <!-- Dinner -->
+    <div class="col-md-4 hover-mask h-300 h-md-500">
+      <div class="hover-mask-image overlay overlay-dark overlay-20 jarallax" data-jarallax data-speed="0.8" style="background-image: url('../assets/img/unsplash/36.jpeg');"></div>
+
+      <div class="hover-mask-content d-flex justify-content-center align-items-center opacity-100">
+        <h4 class="text-white text-center text-uppercase letter-spacing-lg border-top border-bottom border-2 py-3">
+          Lovely Dinners
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="bg-light py-7">
+    <div class="container">
+      <div class="text-center">
+        <span class="svg-icon svg-icon-xl text-gray-400">
+          @@include("../assets/img/ionicons/remove-outline.svg")
+        </span>
+
+        <h4 class="text-uppercase letter-spacing-lg m-0">
+          Check Our menu
+        </h4>
+
+        <span class="svg-icon svg-icon-xl text-gray-400">
+          @@include("../assets/img/ionicons/remove-outline.svg")
+        </span>
+      </div>
+
+      <div class="row justify-content-center text-center text-md-right mt-5">
+        <div class="col-md-5 offset-md-1">
+          <div class="text-muted">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              To start
+            </p>
+            <p>
+              $7 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Guacamole & Chips
+            </p>
+            <p>
+              $9 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Chicken Wings
+            </p>
+            <p>
+              $7 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Garlic Noodles
+            </p>
+            <p>
+              $9 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Sirloin Tacos
+            </p>
+          </div>
+
+          <div class="text-muted mt-4 mt-md-6">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Salads
+            </p>
+            <p>
+              $13 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Caesar Salad
+            </p>
+            <p>
+              $10 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Bacon & Cheese Salad
+            </p>
+            <p>
+              $10 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Shrimp Salad
+            </p>
+            <p>
+              $11 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Seafood Salad
+            </p>
+          </div>
+
+          <div class="text-muted mt-4 mt-md-6">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Desserts
+            </p>
+            <p>
+              $7 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Banana Ice cream
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Cheesecase
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Sweet Potatoes
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Strawberry Ice Cream
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Brownies
+            </p>
+          </div>
+
+          <div class="text-muted mt-4 mt-md-6">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Sides
+            </p>
+            <p>
+              $7 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Grilled Carrots
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Mashed Potatoes
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Fried Sprouts
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+          <div class="text-muted">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Hard dish
+            </p>
+            <p>
+              $24 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Roasted Salmon
+            </p>
+            <p>
+              $15 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Grilled Lamb
+            </p>
+            <p>
+              $18 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Smoked Chicken
+            </p>
+            <p>
+              $20 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Sirloin Burger
+            </p>
+            <p>
+              $15 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              BBQ Ribs
+            </p>
+            <p>
+              $15 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Grilled Pork Loin
+            </p>
+            <p>
+              $20 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Grilled Cheese Burger
+            </p>
+            <p>
+              $15 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              500g Steak
+            </p>
+          </div>
+
+          <div class="text-muted mt-4 mt-md-6">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Beer
+            </p>
+            <p>
+              $4 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Newcastle Brown Ale
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Hobgoblin Ale
+            </p>
+            <p>
+              $6 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Duvel
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              La Chouffe
+            </p>
+            <p>
+              $5 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Stella Artois
+            </p>
+          </div>
+
+          <div class="text-muted mt-4 mt-md-6">
+            <p class="text-uppercase text-dark font-weight-bolder letter-spacing-lg mb-4">
+              Wine
+            </p>
+            <p>
+              $7 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Fancy wine
+            </p>
+            <p>
+              $8 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Oh La La
+            </p>
+            <p>
+              $10 <span class="svg-icon text-muted">@@include("../assets/img/ionicons/remove-outline.svg")</span>
+              Thorny Rose
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="mt-7 mt-md-8">
+    <div class="container">
+      <div class="text-center">
+        <span class="svg-icon svg-icon-xl text-dark">
+          @@include("../assets/img/ionicons/remove-outline.svg")
+        </span>
+
+        <h4 class="text-uppercase text-dark letter-spacing-lg m-0">
+          Experience great moments
+        </h4>
+
+        <span class="svg-icon svg-icon-xl text-dark">
+          @@include("../assets/img/ionicons/remove-outline.svg")
+        </span>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="bg-cover hover-lift-light h-200 mb-3" style="background-image: url('../assets/img/unsplash/37.jpeg');width: 100%;" data-toggle="zoomerang">
+          </div>
+          <div class="bg-cover hover-lift-light h-200 mb-3 mb-md-0" style="background-image: url('../assets/img/unsplash/38.jpeg');width: 100%;" data-toggle="zoomerang">
+          </div>
+        </div>
+
+        <div class="col-md-6 d-flex align-items-stretch">
+          <div class="bg-cover hover-lift-light mb-3 mb-md-0" style="background-image: url('../assets/img/pexels/3.jpeg');width: 100%;height: 415px;" data-toggle="zoomerang">
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="bg-cover hover-lift-light h-200 mb-3" style="background-image: url('../assets/img/unsplash/39.jpeg');width: 100%;" data-toggle="zoomerang">
+          </div>
+          <div class="bg-cover hover-lift-light h-200" style="background-image: url('../assets/img/unsplash/40.jpeg');width: 100%;" data-toggle="zoomerang">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation form -->
+  <section class="bg-dark position-relative mt-10 mt-lg-11">
+    <!-- SVG divider -->
+    <div class="svg-divider svg-divider-top text-white">
+      @@include("../assets/img/svg/figures/diagonal.svg")
+    </div>
+
+    <div class="container position-relative">
+      <div class="bg-white rounded shadow-light-lg w-lg-75 mx-auto py-6 px-4 px-md-5 px-lg-6">
+        <h4 class="text-center text-uppercase letter-spacing-lg">
+          Make a reservation
+        </h4>
+
+        <form class="text-right mt-6">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Date of your visit</label>
+                <input type="text" class="form-control rounded-0 py-4" data-toggle="datepicker">
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Your name</label>
+                <input type="text" class="form-control rounded-0 py-4">
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Time</label>
+                <input type="text" class="form-control rounded-0 py-4">
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Your email</label>
+                <input type="email" class="form-control rounded-0 py-4">
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Party size</label>
+                <input type="text" class="form-control rounded-0 py-4">
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-secondary text-uppercase-bold-sm">Your phone</label>
+                <input type="text" class="form-control rounded-0 py-4">
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center mt-4">
+            <div class="col-xl-4">
+              <button type="submit" class="btn btn-success btn-lg btn-block rounded-0 hover-lift">
+                Book a table
+                <span class="svg-icon svg-icon-sm text-white mr-2 relative-top--1">
+                  @@include("../assets/img/ionicons/arrow-back-outline.svg")
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-dark bg-dark pt-8" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

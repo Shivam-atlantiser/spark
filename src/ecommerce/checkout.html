@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Checkout | Inertia"
+})
+<body class="bg-light">
+  @@include('../partials/navbar-ecommerce.html')
+
+  <!-- Steps -->
+  <section class="mt-4">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb flex-column flex-md-row justify-content-center mb-0">
+          <li class="breadcrumb-item active mb-2 mb-md-0">
+            1 - Client Information
+          </li>
+          <li class="breadcrumb-item text-muted mb-2 mb-md-0 pl-0 pl-md-2">
+            2 - Shipping & Payment
+          </li>
+          <li class="breadcrumb-item text-muted pl-0 pl-md-2">
+            3 - Order Confirmation
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="mt-4 mt-md-5">
+    <div class="container border-bottom border-gray-200 pb-7">
+      <div class="row">
+        <!-- Forms -->
+        <div class="col-lg-6">
+          <h5>
+            Your information
+          </h5>
+
+          <div class="card mt-4">
+            <div class="d-flex align-items-center border-bottom border-gray-200 py-2 px-4">
+              <label for="field-name" class="w-25 text-secondary m-0">
+                Your name
+              </label>
+              <input id="field-name" name="name" type="text" class="form-control border-0 w-75" placeholder="Your full name">
+            </div>
+            <div class="d-flex align-items-center py-2 px-4">
+              <label for="field-email" class="w-25 text-secondary m-0">
+                Email address
+              </label>
+              <input id="field-email" name="email" type="email" class="form-control border-0 w-75" placeholder="Email address">
+            </div>
+          </div>
+
+          <h5 class="mt-5">
+            Shipping address
+          </h5>
+
+          <div class="card mt-4">
+            <div class="d-flex align-items-center border-bottom border-gray-200 py-2 px-4">
+              <label for="field-address" class="w-25 text-secondary m-0">
+                Address
+              </label>
+              <input id="field-address" name="address" type="text" class="form-control border-0 w-75" placeholder="Street, interior number, etc">
+            </div>
+            <div class="d-flex align-items-center border-bottom border-gray-200 py-2 px-4">
+              <label for="field-city" class="w-25 text-secondary m-0">
+                City
+              </label>
+              <input id="field-city" name="city" type="text" class="form-control border-0 w-75" placeholder="City">
+            </div>
+            <div class="d-flex align-items-center border-bottom border-gray-200 py-2 px-4">
+              <label for="field-zip" class="w-25 text-secondary m-0">
+                ZIP
+              </label>
+              <input id="field-zip" name="zip" type="text" class="form-control border-0 w-75" placeholder="ZIP Code">
+            </div>
+            <div class="d-flex align-items-center border-bottom border-gray-200 py-2 px-4">
+              <label for="field-country" class="w-25 text-secondary m-0">
+                Country
+              </label>
+              <select id="field-country" name="country" class="form-select border-0 w-75">
+                <option>Country</option>
+                <option>Australia</option>
+                <option>Belgium</option>
+                <option>Canada</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Mexico</option>
+                <option>UK</option>
+                <option>United States</option>
+              </select>
+            </div>
+            <div class="d-flex align-items-center py-2 px-4">
+              <label for="field-phone" class="w-25 text-secondary m-0">
+                Phone
+              </label>
+              <input id="field-phone" name="phone" type="text" class="form-control border-0 w-75" placeholder="Phone">
+            </div>
+          </div>
+
+          <div class="text-right mt-5">
+            <a href="checkout-payment.html" class="btn btn-dark text-uppercase-bold-sm hover-lift-light">
+              Shipping & Payment
+              <i class="fas fa-chevron-right fa-sm ml-2"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Order summary -->
+        <div class="col-lg-6 mt-5">
+          <div class="bg-white rounded w-lg-90 float-lg-right p-4">
+            <h5 class="text-center mb-5">
+              Order Summary
+            </h5>
+
+            <div class="border-bottom pb-4 mb-4">
+              <!-- Product -->
+              <div class="d-flex">
+                <img src="../assets/img/ecommerce/product-1.jpg" class="img-fluid" style="width: 70px;" alt="">
+                <div class="flex-1 ml-4">
+                  <div class="text-dark">
+                    1 x Blue Elegant Pull-over Shirt
+                  </div>
+                  <div class="text-dark mt-1">
+                    $200.00
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product -->
+              <div class="d-flex mt-3">
+                <img src="../assets/img/ecommerce/product-2.jpg" class="img-fluid" style="width: 70px;" alt="">
+                <div class="flex-1 ml-4">
+                  <div class="text-dark">
+                    2 x Long-sleeve Formal Shirt
+                  </div>
+                  <div class="text-dark mt-1">
+                    $349.00
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <p>Subtotal</p>
+              <span class="ml-auto">$549.00</span>
+            </div>
+            <div class="d-flex">
+              <p>Taxes</p>
+              <span class="ml-auto">$3.00</span>
+            </div>
+            <div class="d-flex">
+              <p>Shipping</p>
+              <span class="ml-auto">FREE</span>
+            </div>
+            <div class="d-flex mt-4">
+              <span class="lead">Total:</span>
+              <h4 class="text-success ml-auto">$552 USD</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-light bg-light mt-5" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

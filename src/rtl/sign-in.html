@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Sign in | Inertia"
+})
+
+<body class="rtl bg-light min-vh-100">
+  <section class="container text-center py-5 py-md-6 py-xl-8">
+    <a href="index.html">
+      <img src="../assets/img/svg/logo.svg" style="width: 130px;" class="fx-fade-up" alt="">
+    </a>
+
+    <h4 class="font-weight-normal text-dark mt-5 fx-fade-up">
+      Log in to your account
+    </h4>
+
+    <div class="row justify-content-center mt-4 pt-3 fx-fade-up animation-delay-2">
+      <div class="col-md-6 col-lg-4">
+        <form>
+          <div class="mb-3">
+            <input type="email" name="email" placeholder="Email" class="form-control form-control-lg bg-pastel-darkblue">
+          </div>
+
+          <div class="mb-3">
+            <input type="password" name="password" placeholder="Password" class="form-control form-control-lg bg-pastel-darkblue">
+          </div>
+
+          <input type="submit" class="btn btn-primary btn-block btn-lg shadow-lg text-uppercase-bold-sm hover-lift mt-4" value="Sign in">
+
+          <a href="recover-password.html" class="d-block font-size-sm mt-5">
+            Forgot your password?
+          </a>
+
+          <div class="text-secondary font-size-sm mt-5">
+            Don't have an account?
+            <a href="sign-up.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

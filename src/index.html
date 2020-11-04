@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Inertia Theme"
+})
+<body>
+  @@include('./partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100",
+    "boxed": true
+  })
+
+  <!-- Hero -->
+  <section class="bg-light position-relative py-8 py-lg-11 py-xxl-12">
+    <!-- SVG divider -->
+    <div class="svg-divider svg-divider-bottom text-white">
+      @@include("assets/img/svg/figures/diagonal.svg")
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <!-- Intro -->
+        <div class="col-lg-6 text-center text-lg-left pr-xl-5">
+          <div class="fx-fade-up animation-delay-2">
+            <h3 class="text-muted text-uppercase-xs">
+              Multipurpose Bootstrap 5 Theme 
+            </h3>
+
+            <h1 class="text-darkblue font-weight-normal mt-4">
+              Improve your next <span class="text-primary">web project</span>. Design, develop, and launch faster.
+            </h1>
+          </div>
+
+          <p class="lead text-muted w-lg-80 mt-4 fx-fade-up animation-delay-4">
+            Create your new website with a modern, functional and flexible design.
+          </p>
+
+          <div class="mt-5 fx-fade-up animation-delay-6">
+            <a href="#" class="btn btn-primary text-uppercase font-size-sm shadow-sm hover-lift pt-2 mr-3">
+              Learn more
+            </a>
+            <a href="docs/index.html" class="btn btn-white text-uppercase font-size-sm font-weight-bold shadow-sm hover-lift pt-2">
+              View Docs
+            </a>
+          </div>
+        </div>
+
+        <!-- Screens collage -->
+        <div class="col-lg-6 position-relative d-none d-lg-block">
+          <!-- Set inline width and height for retina -->
+          <div class="position-lg-absolute right-0 bottom-0 mb-lg-n8 fx-fade-up animation-delay-6">
+            <a href="blog-grid.html" class="atvImg d-block" style="width:379px;height: 247px">
+              <img src="assets/img/screenshots/atv-2.jpg" style="width: 379px;">
+              <span class="atvImg-layer" data-img="assets/img/screenshots/atv-2.jpg"></span>
+            </a>
+          </div>
+
+          <div class="position-lg-absolute top-0 right-0 mt-lg-n6 mr-lg-n7 fx-fade-up animation-delay-2">
+            <a href="blog-post.html" class="atvImg d-block" style="width:379px;height: 250px">
+              <img src="assets/img/screenshots/atv-3.jpg" style="width: 379px;">
+              <span class="atvImg-layer" data-img="assets/img/screenshots/atv-3.jpg"></span>
+            </a>
+          </div>
+
+          <div class="position-lg-absolute top-0 left-0 mt-lg-4 ml-lg-3 fx-fade-up animation-delay-4">
+            <a href="index-enterprise.html" class="atvImg d-block" style="width:379px;height: 260px">
+              <img src="assets/img/screenshots/atv-1.jpg" style="width: 379px;">
+              <span class="atvImg-layer" data-img="assets/img/screenshots/atv-1.jpg"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies Logos -->
+  <section class="mt-5 mt-lg-4">
+    <div class="container">
+      <h3 class="text-center text-primary text-uppercase-bold-sm line-height-lg">
+        Trusted by over 5,000 design-oriented companies
+      </h3>
+
+      <div class="row justify-content-between align-items-center mt-5">
+        <div class="col-6 col-sm-4 col-lg-auto">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 150px;">
+            @@include("assets/img/svg/basecamp.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 70px;">
+            @@include("assets/img/svg/stripe.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-sm-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 60px;">
+            @@include("assets/img/svg/twitter.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 150px;">
+            @@include("assets/img/svg/mailchimp.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 120px;">
+            @@include("assets/img/svg/mixpanel.svg")
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-lg-auto mt-4 mt-lg-0">
+          <div class="text-darkblue mx-auto img-fluid" style="width: 120px;">
+            @@include("assets/img/svg/heroku.svg")
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gradient wrapper -->
+  <section class="bg-gradient-light">
+    <!-- Features #1 -->
+    <div class="pt-8 pt-lg-9">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
+            <div class="video-card card-skew-right h-300 overlay overlay-primary overlay-20" style="background-image: url('assets/img/unsplash/22.jpeg');">
+              <a class="icon-circle icon-circle-lg bg-white text-darkblue hover-scale position-relative" href="https://www.youtube.com/watch?v=1R8wg6dPK-Y" data-fancybox>
+                @@include("assets/img/stockholm/Media/Play.svg")
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pl-lg-6 mt-6 mt-lg-0">
+            <!-- Feature -->
+            <div class="d-flex">
+              <span class="svg-icon svg-icon-xl text-primary">
+                @@include("assets/img/stockholm/Files/Cloud-download.svg")
+              </span>
+              <div class="flex-1 ml-4">
+                <h6 class="text-darkblue text-uppercase font-weight-bold">
+                  Real time updates
+                </h6>
+                <p class="text-muted">
+                  Enjoy a faster workflow with live browser reloads any time you make a new change.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="d-flex mt-4 mt-xl-5">
+              <span class="svg-icon svg-icon-xl text-primary">
+                @@include("assets/img/stockholm/Communication/Sending.svg")
+              </span>
+              <div class="flex-1 ml-4">
+                <h6 class="text-darkblue text-uppercase font-weight-bold">
+                  Free updates and support
+                </h6>
+                <p class="text-muted">
+                  Get free lifetime updates of new components, layouts, page designs and an attentive technical support.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="d-flex mt-4 mt-xl-5">
+              <span class="svg-icon svg-icon-xl text-primary">
+                @@include("assets/img/stockholm/Design/Color-profile.svg")
+              </span>
+              <div class="flex-1 ml-4">
+                <h6 class="text-darkblue text-uppercase font-weight-bold">
+                  Great variety of designs
+                </h6>
+                <p class="text-muted mb-0">
+                  Launch a complete website with 10 ready to use landing pages and 40+ support pages. Each one with unique ideas and layouts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features #2 -->
+    <div class="mt-7">
+      <div class="container text-center text-lg-left">
+        <span class="svg-icon svg-icon-xxl text-primary ml-n2">
+          @@include("assets/img/ionicons/remove-outline.svg")
+        </span>
+
+        <h1 class="text-darkblue font-weight-normal">
+          A great solution for <br>your projects
+        </h1>
+
+        <div class="row mt-6">
+          <!-- Feature -->
+          <div class="col-lg-4">
+            <div class="svg-icon svg-icon-xl text-primary">
+              @@include("assets/img/stockholm/Design/Select.svg")
+            </div>
+            <h4 class="text-darkblue font-weight-normal mt-4">
+              Flexible & reusable
+            </h4>
+            <p class="text-muted mt-4">
+              Inertia is made to be easily adapted to different looks. It comes with styled Bootstrap components plus new ones that can be customized via SASS variables.
+            </p>
+          </div>
+
+          <!-- Feature -->
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="svg-icon svg-icon-xl text-primary">
+              @@include("assets/img/stockholm/Design/Layers.svg")
+            </div>
+            <h4 class="text-darkblue font-weight-normal mt-4">
+              Modern & visual design
+            </h4>
+            <p class="text-muted mt-4">
+              With a great variety of layouts and sections to build a complete website. Inertia offers a modern design that feels fresh and professional.
+            </p>
+          </div>
+
+          <!-- Feature -->
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="svg-icon svg-icon-xl text-primary">
+              @@include("assets/img/stockholm/Code/Terminal.svg")
+            </div>
+            <h4 class="text-darkblue font-weight-normal mt-4">
+              Well documented
+            </h4>
+            <p class="text-muted mt-4">
+              Thorough documentation for building and customizing. Code examples for core and new components. Class utilities with new functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="pt-7 pb-6 mt-7" style="background: #374767;">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="badge bg-warning text-darkblue text-uppercase-bold-sm pt-2">
+            Landing pages
+          </h5>
+        </div>
+
+        <div class="row row-cols-2 text-center mt-5">
+          <div class="col mb-4 pb-3">
+            <a href="index.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Online Business (Current)
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-mobile.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-mobile.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Mobile App
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-enterprise.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-enterprise.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Enterprise
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-agency.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-agency.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Digital Agency
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-app.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-app.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              SaaS / Web App
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-event.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-conference.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Conference / Event
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-job.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-job.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Jobs Directory
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-restaurant.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-restaurant.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Restaurant
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-portfolio.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-portfolio.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Personal Portfolio
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="index-photography.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/index-photography.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Photographer
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <h5 class="badge bg-warning text-darkblue text-uppercase-bold-sm pt-2">
+            Blogs
+          </h5>
+        </div>
+
+        <div class="row row-cols-2 text-center mt-5">
+          <div class="col mb-4 pb-3">
+            <a href="blog-cols.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-cols.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Columns
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-grid.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-grid.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Grid
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-list.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-list.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog List
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-sidebar.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-sidebar.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Sidebar
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-timeline.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-timeline.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Timeline
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-post.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-post.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Post
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="blog-post-alt.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/blog-post-alt.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Blog Post Alt
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <h5 class="badge bg-warning text-darkblue text-uppercase-bold-sm pt-2">
+            Supporting pages
+          </h5>
+        </div>
+
+        <div class="row row-cols-2 text-center mt-5">
+          <div class="col mb-4 pb-3">
+            <a href="about.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/about.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              About Us
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="about-alt.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/about-alt.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              About Us Alt
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="contact.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/contact.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Contact Us
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="contact-alt.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/contact-alt.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Contact Us Alt
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="contact-project.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/contact-project.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Contact Us Project
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="comparison-charts.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/pricing.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Pricing Comparison
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="pricing-charts.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/pricing-charts.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Pricing Charts
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="pricing-plans.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/pricing-plans.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Pricing Plans
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="careers.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/careers.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Careers
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="career-post.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/career-post.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Career Job Post
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="customers.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/customers.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Customer Stories
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="customer-story.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/customer-story.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Customer Success Story
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="support.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/support.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Support
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="support-topic.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/support-topic.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Support Article
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="project-showcase.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/project-showcase.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Project Showcase
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="sign-up-cover.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/sign-up.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Sign Up
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="sign-in-cover.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/sign-in.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              Sign In
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+              <h3 class="text-white letter-spacing-xl">
+                + MUCH MORE
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <h5 class="badge bg-warning text-darkblue text-uppercase-bold-sm pt-2">
+            E-commerce
+          </h5>
+        </div>
+
+        <div class="row row-cols-2 text-center mt-5">
+          <div class="col mb-4 pb-3">
+            <a href="ecommerce/index.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/ecommerce-index.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              E-commerce Landing
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="ecommerce/collection-grid.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/ecommerce-collection.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              E-commerce Collection
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="ecommerce/collection-list.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/ecommerce-list.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              E-commerce List
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="ecommerce/product.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/ecommerce-product.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              E-commerce Product
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <a href="ecommerce/checkout.html" class="d-block" target="_blank">
+              <img data-src="assets/img/thumbs/ecommerce-checkout.png" class="img-fluid rounded-lg shadow-sm hover-lift-light lazyload" loading="lazy">
+            </a>
+            <p class="lead text-white mt-4">
+              E-commerce Checkout
+            </p>
+          </div>
+          <div class="col mb-4 pb-3">
+            <div class="h-100 w-100 d-flex align-items-center justify-content-center">
+              <h3 class="text-white letter-spacing-xl">
+                + 11 PAGES MORE
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing -->
+    <div class="mt-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 text-center text-lg-left">
+            <span class="svg-icon svg-icon-xxl text-primary ml-n2">
+              @@include("assets/img/ionicons/remove-outline.svg")
+            </span>
+            <h1 class="text-darkblue font-weight-normal">
+              Fair pricing <br>
+              for everyone
+            </h1>
+            <p class="w-lg-70 text-muted mt-4">
+              Whether you plan on working on a single project or several, we got you covered.
+            </p>
+          </div>
+
+          <div class="col-lg-7 pt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Standard plan -->
+                <div class="card">
+                  <div class="card-body text-center">
+                    <div class="svg-icon svg-icon-lg text-primary">
+                      @@include("assets/img/stockholm/Shopping/Box-2.svg")
+                    </div>
+                    <h5 class="text-darkblue mt-4">
+                      Single License
+                    </h5>
+                    <div class="d-flex justify-content-center align-items-center text-darkblue">
+                      <span class="h3 mb-0 mr-1">$</span>
+                      <span class="display-3">19</span>
+                    </div>
+                    <p class="mt-4 mb-6">
+                      Use, by you or one client, in a single end product which end users are not charged for.
+                    </p>
+                    <a href="https://themeforest.net/item/inertia-bootstrap-4-theme/28118043" target="_blank" class="btn btn-primary btn-lg btn-block text-uppercase-bold-sm hover-lift-light">
+                      Buy it now
+                      <i class="fa fa-arrow-right fa-sm ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Multi-site plan -->
+              <div class="col-md-6 mt-4 mt-md-0">
+                <div class="card bg-darkblue">
+                  <div class="card-body text-center text-pastel-info">
+                    <div class="svg-icon svg-icon-lg text-white">
+                      @@include("assets/img/stockholm/Tools/Pantone.svg")
+                    </div>
+                    <h5 class="mt-4">
+                      Extended License
+                    </h5>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <span class="h3 mb-0 mr-1">$</span>
+                      <span class="display-3">699</span>
+                    </div>
+                    <p class="mt-4 mb-6">
+                      Use, by you or one client, in a single end product which end users can be charged for.
+                    </p>
+                    <a href="https://themeforest.net/item/inertia-bootstrap-4-theme/28118043" target="_blank" class="btn btn-white btn-lg btn-block text-primary text-uppercase-bold-sm hover-lift-light">
+                      Buy it now
+                      <i class="fa fa-arrow-right fa-sm ml-2"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="mt-6">
+      <div class="container text-center text-lg-left">
+        <span class="svg-icon svg-icon-xxl text-info ml-n2">
+          @@include("assets/img/ionicons/remove-outline.svg")
+        </span>
+
+        <h1 class="text-darkblue font-weight-normal">
+          We love helping our <br> customers succeed
+        </h1>
+      </div>
+
+      <!-- Swiper slider -->
+      <div class="swiper-container mt-5" data-toggle="swiper" data-options='{ "slidesPerView": "auto", "centeredSlides": true, "grabCursor": true, "speed": 500, "navigation": { "nextEl": ".swiper-custom-button-next", "prevEl": ".swiper-custom-button-prev" } }'>
+
+        <div class="swiper-wrapper d-flex align-items-center">
+          <!-- Slide -->
+          <div class="swiper-slide container">
+            <div class="row g-0 align-items-center bg-white shadow-light-sm">
+              <div class="col-md-7 p-4 p-md-5">
+                <div class="lead">
+                  “Most human beings complain about the meanness of nature, because we are born for a brief span of life, and because this spell of time that has been given to us rushes by so swiftly and rapidly that with very few exceptions life ceases for the rest of us just when we are getting ready for it.”
+                </div>
+                <span class="svg-icon svg-icon-xl text-warning ml-n2">
+                  @@include("assets/img/ionicons/remove-outline.svg")
+                </span>
+                <h5 class="text-darkblue">
+                  Seneca the younger
+                </h5>
+                <p class="text-muted font-size-sm">
+                  Lead Philosoper
+                </p>
+                <div class="text-dark" style="width: 100px;">
+                  @@include("assets/img/svg/basecamp.svg")
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/1.jpeg');"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide -->
+          <div class="swiper-slide container">
+            <div class="row g-0 align-items-center bg-white shadow-light-sm">
+              <div class="col-md-7 p-4 p-md-5">
+                <div class="lead">
+                  “If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, "He was ignorant of my other faults, else he would not have mentioned these alone.”
+                </div>
+                <span class="svg-icon svg-icon-xl text-info ml-n2">
+                  @@include("assets/img/ionicons/remove-outline.svg")
+                </span>
+                <h5 class="text-darkblue">
+                  Epictetus
+                </h5>
+                <p class="text-muted font-size-sm">
+                  Head of Philosophy
+                </p>
+                <div class="text-dark" style="width: 60px;">
+                  @@include("assets/img/svg/stripe.svg")
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/2.jpeg');"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide -->
+          <div class="swiper-slide container">
+            <div class="row g-0 align-items-center bg-white shadow-light-sm">
+              <div class="col-md-7 p-4 p-md-5">
+                <div class="lead">
+                  “One who is injured ought not to return the injury, for on no account can it be right to do an injustice; and it is not right to return an injury, or to do evil to any man, however much we have suffered from him.”
+                </div>
+                <span class="svg-icon svg-icon-xl text-success ml-n2">
+                  @@include("assets/img/ionicons/remove-outline.svg")
+                </span>
+                <h5 class="text-darkblue">
+                  Socrates
+                </h5>
+                <p class="text-muted font-size-sm">
+                  Senior Philosoper
+                </p>
+                <div class="text-dark" style="width: 80px;">
+                  @@include("assets/img/svg/dribbble.svg")
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="bg-cover h-350 h-md-500" style="background-image: url('assets/img/unsplash/3.jpeg');"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="container mt-4 pt-2">
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+            <a href="#" class="swiper-custom-button-prev text-darkblue">
+              <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+            <a href="#" class="swiper-custom-button-next text-darkblue ml-4">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="mt-7 mt-lg-9 pb-8">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+          <h1 class="text-darkblue font-weight-normal text-center text-lg-left mr-lg-4 mb-5 mb-lg-0">
+            Start building great products
+          </h1>
+          <a href="https://themeforest.net/item/inertia-bootstrap-4-theme/28118043" target="_blank" class="btn btn-primary btn-lg shadow-sm hover-lift ml-lg-4 mr-lg-3">
+            Get it now
+          </a>
+          <a href="docs/index.html" class="btn btn-white btn-lg font-weight-bold shadow-sm hover-lift ml-lg-3 mt-4 mt-lg-0">
+            View docs
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('./partials/footer.html', { "classList": "footer footer-dark bg-dark" })
+  @@include('./partials/scripts.html')
+</body>
+</html>

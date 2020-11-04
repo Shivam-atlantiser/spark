@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Cards | Inertia Docs"
+})
+<body>
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top",
+    "boxed": false,
+    "logo": "../assets/img/svg/logo-docs.svg"
+  })
+
+  <div class="container-fluid container-docs">
+    <div class="row">
+      @@include('../partials/docs-sidebar.html')
+
+      <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6">
+        <h3 class="text-darkblue">
+          Cards
+        </h3>
+        <a href="https://getbootstrap.com/docs/4.4/components/card/" class="text-purple" target="_blank">See Bootstrap docs <i class="fas fa-external-link-alt font-size-xs ml-1"></i></a>
+
+        <h5 class="text-darkblue pt-7 mt-n5" id="basic">
+          Basic card
+        </h5>
+        <div class="card border border-gray-100 mt-4">
+          <div class="card-body bg-light">
+            <div class="card">
+              <div class="card-header text-uppercase-bold-sm">
+                Card Header
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special card title</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-purple shadow-light-sm mt-2">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;div class="card shadow-light"><br>
+                &nbsp;&nbsp;&lt;div class="card-header"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Card Header<br>
+                &nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;div class="card-body"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="card-title">Special card title&lt;/h5><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="card-text">With supporting text below as a natural lead-in to additional content.&lt;/p><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-purple shadow-light-sm mt-2">Go somewhere&lt;/a><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 mt-5 mb-0">
+
+        <h5 class="text-darkblue pt-7 mt-n5" id="blog">
+          Blog posts
+        </h5>
+        <div class="card mt-4">
+          <div class="card-body bg-light">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card h-100 shadow-light hover-lift-light">
+                  <a class="card-img-top" href="#">
+                    <img src="../assets/img/unsplash/41.jpeg" class="img-fluid rounded-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <a href="#" class="h4 font-weight-normal text-dark text-decoration-none">
+                      How to remain calm when life gets real hard.
+                    </a>
+                    <p class="text-secondary font-size-sm mt-3">
+                      Inertia has both a web app and an android app to make your website.
+                    </p>
+                  </div>
+                  <div class="card-bottom-info">
+                    <div class="avatar avatar-sm">
+                      <img src="../assets/img/uifaces/5.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <span class="text-uppercase-xs text-muted ml-2">
+                      David Gilmour
+                    </span>
+                    <div class="text-uppercase-xs text-muted ml-auto">
+                      <i class="far fa-calendar fa-xs relative-top--1"></i>
+                      May 11
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-5 mt-lg-0">
+                <div class="card h-100 shadow-light hover-lift-light">
+                  <a class="card-img-top" href="#">
+                    <img src="../assets/img/unsplash/49.jpeg" class="img-fluid rounded-top" alt="">
+                  </a>
+                  <div class="card-body">
+                    <a href="#" class="h4 font-weight-normal text-dark text-decoration-none">
+                      Learn how to take the best photos with a Leica.
+                    </a>
+                    <p class="text-secondary font-size-sm mt-3">
+                      Inertia has both a web app and an android app to make your website.
+                    </p>
+                  </div>
+                  <div class="card-bottom-info">
+                    <div class="avatar avatar-sm">
+                      <img src="../assets/img/uifaces/8.jpg" class="avatar-image rounded-circle" alt="">
+                    </div>
+                    <span class="text-uppercase-xs text-muted ml-2">
+                      Ana Smith
+                    </span>
+                    <div class="text-uppercase-xs text-muted ml-auto">
+                      <i class="far fa-calendar fa-xs relative-top--1"></i>
+                      Jul 22
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;div class="row"><br>
+                &nbsp;&nbsp;&lt;div class="col-lg-6"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card h-100 shadow-light hover-lift-light"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="card-img-top" href="#"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/unsplash/41.jpeg" class="img-fluid rounded-top"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="h4 text-dark text-decoration-none"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How to remain calm when life gets real hard.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-secondary mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inertia has both a web app and an android app to make your website.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-bottom-info"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="avatar avatar-sm"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/5.jpg" class="avatar-image rounded-circle"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Gilmour<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="ml-auto"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-calendar fa-xs">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 11<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br><br>
+                &nbsp;&nbsp;&lt;div class="col-lg-6"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card h-100 shadow-light hover-lift-light"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="card-img-top" href="#"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/unsplash/41.jpeg" class="img-fluid rounded-top"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="h4 text-dark text-decoration-none"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learn how to take the best photos with a Leica.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="text-secondary mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inertia has both a web app and an android app to make your website.<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-bottom-info"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="avatar avatar-sm"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="../assets/img/uifaces/8.jpg" class="avatar-image rounded-circle"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2"><br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ana Smith<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="ml-auto"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-calendar fa-xs">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jul 22<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 mt-5 mb-0">
+
+        <h5 class="text-darkblue pt-7 mt-n5" id="pricing">
+          Pricing charts
+        </h5>
+        <div class="card mt-4">
+          <div class="card-body bg-light">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="card shadow-light-sm">
+                  <div class="card-body">
+                    <h5 class="text-center font-weight-normal">
+                      Beginner
+                    </h5>
+                    <div class="d-flex justify-content-center">
+                      <span class="h3 align-self-center mb-0">$</span>
+                      <span class="display-3">29</span>
+                      <span class="h4 align-self-end mb-3">/mo</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">3 Collaborators</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">10 Projects</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">1GB data storage</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">3% Transaction fee</span>
+                    </div>
+                    <a href="#" class="btn btn-pastel-primary btn-block btn-lg hover-lift-light mt-5">
+                      Start your trial
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-4 mt-xl-0">
+                <div class="card shadow-light-sm">
+                  <div class="card-body">
+                    <h5 class="text-center font-weight-normal">
+                      Professional
+                    </h5>
+                    <div class="d-flex justify-content-center">
+                      <span class="h3 align-self-center mb-0">$</span>
+                      <span class="display-3">79</span>
+                      <span class="h4 align-self-end mb-3">/mo</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">10 Collaborators</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">30 Projects</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">5GB data storage</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">Exclusive Support</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">1.5% Transaction fee</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-block btn-lg hover-lift-light mt-5">
+                      Choose this plan
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-4 mt-xl-0">
+                <div class="card shadow-light-sm">
+                  <div class="card-body">
+                    <h5 class="text-center font-weight-normal">
+                      Enterprise
+                    </h5>
+                    <div class="d-flex justify-content-center">
+                      <span class="h3 align-self-center mb-0">$</span>
+                      <span class="display-3">109</span>
+                      <span class="h4 align-self-end mb-3">/mo</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">Unlimited collaborators</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">Unlimited projects</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">50GB data storage</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">VIP Support</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">No license needed</span>
+                    </div>
+                    <div class="d-flex align-items-center mt-3 pl-2">
+                      <i class="far fa-check-circle text-success"></i>
+                      <span class="ml-2">No transaction fee</span>
+                    </div>
+                    <a href="#" class="btn btn-pastel-primary btn-block btn-lg hover-lift-light mt-5">
+                      Contact sales
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;div class="row"><br>
+                &nbsp;&nbsp;&lt;div class="col-xl-4"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beginner<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">29&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">3 Collaborators&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">10 Projects&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">1GB data storage&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">3% Transaction fee&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-pastel-primary btn-block btn-lg hover-lift-light mt-5"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start your trial<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br><br>
+                &nbsp;&nbsp;&lt;div class="col-xl-4 mt-4 mt-xl-0"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Professional<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">79&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">10 Collaborators&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">30 Projects&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">5GB data storage&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">Exclusive Support&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">1.5% Transaction fee&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-primary btn-block btn-lg hover-lift-light mt-5"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Choose this plan<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br><br>
+                &nbsp;&nbsp;&lt;div class="col-xl-4 mt-4 mt-xl-0"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card shadow-light-sm"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="text-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enterprise<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/h5><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex justify-content-center"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h3 align-self-center mb-0">$&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="display-3">109&lt;/span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="h4 align-self-end mb-3">/mo&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">Unlimited collaborators&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">Unlimited projects&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">50GB data storage&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">VIP Support&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">No license needed&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="d-flex align-items-center mt-3"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="far fa-check-circle text-success">&lt;/i><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="ml-2">No transaction fee&lt;/span><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="btn btn-pastel-primary btn-block btn-lg hover-lift-light mt-5"><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact sales<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
+
+        <hr class="border-gray-200 mt-5 mb-0">
+
+        <h5 class="text-darkblue pt-7 mt-n5" id="customers">
+          Customer studies
+        </h5>
+        <div class="card mt-4">
+          <div class="card-body bg-light">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card h-100 rounded-lg shadow-light hover-lift-light">
+                  <div class="card-body">
+                    <a href="#" class="d-block rounded bg-cover h-250" style="background-image: url('../assets/img/unsplash/72.jpeg');"></a>
+                    <div class="text-dark mt-4" style="width: 100px;">@@include("../assets/img/svg/basecamp.svg")</div>
+                    <p class="mt-3">
+                      Inertia is providing all necessary infrastructure so Basecamp can focus on what they do best, bringing the best project management systems for everyone.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-purple btn-lg card-footer-btn">
+                    <span class="text-uppercase-bold-sm">Read full study</span>
+                    <i class="fa fa-arrow-right fa-sm ml-auto"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-6 mt-lg-0">
+                <div class="card h-100 rounded-lg shadow-light hover-lift-light">
+                  <div class="card-body">
+                    <a href="#" class="d-block rounded bg-cover h-250" style="background-image: url('../assets/img/unsplash/69.jpeg');"></a>
+                    <div class="text-dark mt-4" style="width: 55px;">@@include("../assets/img/svg/stripe.svg")</div>
+                    <p class="mt-3">
+                      The great people at Stripe couldn't be happier with the results that Inertia has provided for them, all credit card payment processing went 3% last year.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-purple btn-lg card-footer-btn">
+                    <span class="text-uppercase-bold-sm">Read full study</span>
+                    <i class="fa fa-arrow-right fa-sm ml-auto"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;div class="row"><br>
+                &nbsp;&nbsp;&lt;div class="col-lg-6"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card h-100 shadow-light hover-lift-light"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="d-block rounded bg-cover h-250" style="background-image: url('../assets/img/unsplash/72.jpeg');">&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-dark mt-4">&#64;@include("../assets/img/svg/basecamp.svg")&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-footer-btn btn btn-purple btn-lg"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read full study<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-arrow-right fa-sm ml-auto">&lt;/i><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br><br>
+                &nbsp;&nbsp;&lt;div class="col-lg-6 mt-6 mt-lg-0"><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card h-100 shadow-light hover-lift-light"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="d-block rounded bg-cover h-250" style="background-image: url('../assets/img/unsplash/69.jpeg');">&lt;/a><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="text-dark mt-4">&#64;@include("../assets/img/svg/stripe.svg")&lt;/div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/p><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#" class="card-footer-btn btn btn-purple btn-lg"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read full study<br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-arrow-right fa-sm ml-auto">&lt;/i><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div><br>
+                &nbsp;&nbsp;&lt;/div><br>
+              &lt;/div>
+            </code>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-2 d-none d-xl-block px-0 py-5 docs-sidebar docs-sidebar-right">
+        <aside class="border-left pl-5 py-3">
+          <span class="text-uppercase text-muted font-size-sm d-block mb-3">
+            On this page:
+          </span>
+          <a href="#basic" class="d-block my-2" data-toggle="scroll">
+            Basic
+          </a>
+          <a href="#blog" class="d-block my-2" data-toggle="scroll">
+            Blog posts
+          </a>
+          <a href="#pricing" class="d-block my-2" data-toggle="scroll">
+            Pricing charts
+          </a>
+          <a href="#customers" class="d-block my-2" data-toggle="scroll">
+            Customer stories
+          </a>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

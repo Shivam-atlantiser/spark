@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Invoice | Inertia"
+})
+<body class="bg-light">
+  @@include('../partials/navbar-ecommerce.html')
+
+  <section class="mt-5">
+    <div class="container border-bottom border-gray-200 pb-7">
+      <!-- Breadcrumbs -->
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="account.html" class="text-primary">My account</a></li>
+        <li class="breadcrumb-item active">Order #19837 Invoice</li>
+      </ol>
+
+      <!-- Invoice -->
+      <div class="row justify-content-center mt-4 mt-md-5">
+        <div class="col-lg-9">
+          <div class="bg-white rounded-lg shadow-light-sm p-4 p-md-5">
+            <h4 class="mb-3">
+              Hi John,
+            </h4>
+            <p>
+              This is the receipt for a payment of <strong>$312.00</strong> (USD) you made to Inertia Themes.
+            </p>
+
+            <div class="mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="text-muted mb-2">Payment No.</div>
+                  <strong>#88305</strong>
+                </div>
+                <div class="col-md-6 text-md-right">
+                  <div class="text-muted mb-2">Payment Date</div>
+                  <strong>Feb 09, 2020, 03:44 pm</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="border-top border-bottom border-gray-200 mt-4 py-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="text-muted mb-2">Client</div>
+                  <strong>
+                    John McClane
+                  </strong>
+                  <p class="font-size-sm">
+                    989 5th Avenue, New York, 55832
+                    <br>
+                    <a href="#">john@email.com
+                    </a>
+                  </p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                  <div class="text-muted mb-2">Payment To</div>
+                  <strong>
+                    Themes LLC
+                  </strong>
+                  <p class="font-size-sm">
+                    9th Avenue, San Francisco 99383
+                    <br>
+                    <a href="#">themes@email.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <table class="table mt-3 border-bottom">
+              <thead>
+                <tr>
+                  <th scope="col" class="font-size-sm text-dark px-0">Description</th>
+                  <th scope="col" class="text-right font-size-sm text-dark px-0">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-0">Theme customization</td>
+                  <td class="text-right px-0">$60.00</td>
+                </tr>
+                <tr>
+                  <td class="px-0">Website design</td>
+                  <td class="text-right px-0">$80.00</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="mt-4">
+              <div class="d-flex justify-content-between">
+                <p class="text-muted">Subtotal:</p>
+                <span>$390.00</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="text-muted">Shipping:</p>
+                <span>FREE</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p class="text-muted">Discount:</p>
+                <span>-$40.00</span>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <h5>Total:</h5>
+                <h4 class="text-success">$350.00 USD</h4>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-dark btn-lg text-uppercase-bold-sm hover-lift-light py-2">
+                <i class="fas fa-print mr-2"></i>
+                Print
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-light bg-light mt-5" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

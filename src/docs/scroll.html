@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Smooth scroll | Inertia Docs"
+})
+<body>
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top",
+    "boxed": false,
+    "logo": "../assets/img/svg/logo-docs.svg"
+  })
+
+  <div class="container-fluid container-docs">
+    <div class="row">
+      @@include('../partials/docs-sidebar.html')
+
+      <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6">
+        <h3 class="text-darkblue">
+          Smooth page scrolling
+        </h3>
+        <a href="https://github.com/cferdinandi/smooth-scroll" class="text-purple" target="_blank">Plugin docs <i class="fas fa-external-link-alt font-size-xs ml-1"></i></a>
+
+        <p class="text-muted mt-3">
+          The smooth scrolling feature is a nice way to let your users navigate your content while keeping track of where they are on the page. Enabled via <code>data-toggle="scroll"</code>.
+        </p>
+
+        <div class="card border border-gray-100 mt-5">
+          <div class="card-body lead">
+            <a href="#subheader" class="btn btn-primary" data-toggle="scroll">
+              Go to the subheader
+            </a>
+            <p class="my-5">
+              Of all things which wisdom provides to make life entirely happy, much the greatest is the possession of friendship. It is not so much our friends' help that helps us, as the confidence of their help.
+            </p>
+            <p class="my-5">
+              The things in our control are by nature free, unrestrained, unhindered; but those not in our control are weak, slavish, restrained, belonging to others. Remember, then, that if you suppose that things which are slavish by nature are also free, and that what belongs to others is your own, then you will be hindered. You will lament, you will be disturbed, and you will find fault both with gods and men.
+            </p>
+            <p class="my-5">
+              But if you suppose that only to be your own which is your own, and what belongs to others such as it really is, then no one will ever compel you or restrain you. Further, you will find fault with no one or accuse no one. You will do nothing against your will. No one will hurt you, you will have no enemies, and you not be harmed.
+            </p>
+            <p class="my-5">
+              Remember that following desire promises the attainment of that of which you are desirous; and aversion promises the avoiding that to which you are averse. However, he who fails to obtain the object of his desire is disappointed, and he who incurs the object of his aversion wretched. If, then, you confine your aversion to those objects only which are contrary to the natural use of your faculties, which you have in your own control, you will never incur anything to which you are averse. But if you are averse to sickness, or death, or poverty, you will be wretched.
+            </p>
+            <p class="mt-5">
+              Remove aversion, then, from all things that are not in our control, and transfer it to things contrary to the nature of what is in our control. But, for the present, totally suppress desire: for, if you desire any of the things which are not in your own control, you must necessarily be disappointed; and of those which are, and which it would be laudable to desire, nothing is yet in your possession. Use only the appropriate actions of pursuit and avoidance; and even these lightly, and with gentleness and reservation.
+            </p>
+            <h1 id="subheader" class="pt-8 mt-n5">
+              Subheader section starts here
+            </h1>
+            <p class="my-5">
+              Of all things which wisdom provides to make life entirely happy, much the greatest is the possession of friendship. It is not so much our friends' help that helps us, as the confidence of their help.
+            </p>
+            <p class="my-5">
+              The things in our control are by nature free, unrestrained, unhindered; but those not in our control are weak, slavish, restrained, belonging to others. Remember, then, that if you suppose that things which are slavish by nature are also free, and that what belongs to others is your own, then you will be hindered. You will lament, you will be disturbed, and you will find fault both with gods and men.
+            </p>
+            <p class="my-5">
+              But if you suppose that only to be your own which is your own, and what belongs to others such as it really is, then no one will ever compel you or restrain you. Further, you will find fault with no one or accuse no one. You will do nothing against your will. No one will hurt you, you will have no enemies, and you not be harmed.
+            </p>
+            <p class="my-5">
+              Remember that following desire promises the attainment of that of which you are desirous; and aversion promises the avoiding that to which you are averse. However, he who fails to obtain the object of his desire is disappointed, and he who incurs the object of his aversion wretched. If, then, you confine your aversion to those objects only which are contrary to the natural use of your faculties, which you have in your own control, you will never incur anything to which you are averse. But if you are averse to sickness, or death, or poverty, you will be wretched.
+            </p>
+            <p class="mt-5">
+              Remove aversion, then, from all things that are not in our control, and transfer it to things contrary to the nature of what is in our control. But, for the present, totally suppress desire: for, if you desire any of the things which are not in your own control, you must necessarily be disappointed; and of those which are, and which it would be laudable to desire, nothing is yet in your possession. Use only the appropriate actions of pursuit and avoidance; and even these lightly, and with gentleness and reservation.
+            </p>
+          </div>
+          <div class="card-footer bg-dark">
+            <code class="hl html">
+              &lt;a href="#subheader" class="btn btn-primary" data-toggle="scroll"><br>
+                &nbsp;&nbsp;Go to the subheader<br>
+              &lt;/a><br><br>
+              ...<br><br>
+              &lt;h1 id="subheader" class="pt-8 mt-n5"><br>
+                &nbsp;&nbsp;Subheader section starts here<br>
+              &lt;/h1>
+            </code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

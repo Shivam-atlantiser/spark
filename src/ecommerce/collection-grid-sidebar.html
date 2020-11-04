@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Collection grid sidebar | Inertia"
+})
+<body>
+  @@include('../partials/navbar-ecommerce.html')
+
+  <!-- Breadcrumbs & Sorting -->
+  <section class="mt-3 mt-lg-5 fx-fade-in">
+    <div class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-md-auto">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Women</a></li>
+              <li class="breadcrumb-item active">Handbags</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col-md-auto d-flex align-items-center mt-2 mt-md-0 ml-md-auto">
+          <span style="width: 100px;">Sort by:</span>
+          <select class="form-select">
+            <option>Best selling</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+            <option>Oldest to Newest</option>
+            <option>Newest to Oldest</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-4 fx-fade-in">
+    <div class="container-fluid px-lg-5">
+      <div class="row">
+        <div class="col-md-3 col-lg-2 mb-5 mb-md-0">
+          <!-- Sidebar -->
+          @@include('../partials/sidebar-ecommerce.html')
+        </div>
+
+        <div class="col-md-9 col-lg-10">
+          <!-- Grid -->
+          <div class="row">
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <span class="badge bg-info text-uppercase-bold-sm rounded-0 position-absolute top-0 left-0">
+                  30% off
+                </span>
+                <img src="../assets/img/ecommerce/p-1.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Winter boots
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-decoration-line-through text-gray-500 font-size-sm mr-2">
+                  $319.99
+                </span>
+                <span class="text-success">$199.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <span class="badge bg-info text-uppercase-bold-sm rounded-0 position-absolute top-0 left-0">
+                  30% off
+                </span>
+                <img src="../assets/img/ecommerce/p-8.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Handmade Bag
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-decoration-line-through text-gray-500 font-size-sm mr-2">
+                  $619.99
+                </span>
+                <span class="text-success">from $429.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-7.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Handmade Bag
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$49.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-3.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Long sleeve shirt
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$129.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-4.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Vintage shoes
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$89.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-5.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Professional Camera
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$319.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <span class="badge bg-info text-uppercase-bold-sm rounded-0 position-absolute top-0 left-0">
+                  15% off
+                </span>
+                <img src="../assets/img/ecommerce/p-6.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Autumn Bundle kit
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-decoration-line-through text-gray-500 font-size-sm mr-2">
+                  $319.99
+                </span>
+                <span class="text-success">from $159.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-2.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Dress & Boots
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$139.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-9.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Skating shoes
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$239.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+
+            <!-- Product -->
+            <div class="col-6 col-lg-4 col-xl-3 mb-6">
+              <a href="product.html" class="d-block position-relative hover-lift-light">
+                <img src="../assets/img/ecommerce/p-10.jpeg" class="img-fluid" alt="">
+              </a>
+              <a href="product.html" class="d-block text-center text-dark mt-3">
+                Modern Jeans
+              </a>
+              <div class="text-center mt-2">
+                <span class="text-success">$129.99</span>
+              </div>
+              <div class="text-center text-warning fa-xs mt-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="text-center mt-2">
+                <a href="#!" class="btn btn-pistachio rounded-0">
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <!-- Pagination -->
+          <ul class="pagination justify-content-center mt-6">
+            <li class="page-item">
+              <a href="#" class="page-link">&laquo; Prev</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item active">
+              <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">4</a>
+            </li>
+            <li class="page-item">
+              <a href="#" class="page-link">Next &raquo;</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-light bg-light mt-7" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

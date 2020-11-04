@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+@@include('./partials/header.html', {
+  "title": "Support topic | Inertia"
+})
+<body>
+  @@include('./partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100",
+    "boxed": true,
+    "logo": "../assets/img/svg/logo-support.svg"
+  })
+
+  <!-- Search form -->
+  <section class="bg-light pt-7 fx-fade-in">
+    <div class="container">
+      <!-- Form -->
+      <form class="mt-4">
+        <div class="input-group input-group-lg shadow-light-sm">
+          <span class="input-group-text border-0">
+            <i class="fas fa-search fa-xs text-secondary mb-1"></i>
+          </span>
+
+          <input type="text" class="form-control border-0 px-1" placeholder="Search help topics...">
+
+          <span class="input-group-text border-0 py-1 pr-2">
+            <button type="submit" class="btn btn-success text-uppercase-bold-sm">
+              Search
+            </button>
+          </span>
+        </div>
+      </form>
+
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb font-size-sm mt-2 ml-1 pb-3">
+          <li class="breadcrumb-item"><a href="support.html">Support</a></li>
+          <li class="breadcrumb-item"><a href="#!">Settings</a></li>
+          <li class="breadcrumb-item text-muted">Article</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Article -->
+  <section class="mt-5 fx-fade-in">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 pr-lg-5">
+          <h2>
+            How do I switch to a paid plan?
+          </h2>
+
+          <div class="text-muted font-size-sm mt-2 mb-4">
+            <i class="far fa-clock fa-xs text-muted mr-1"></i>
+            3 minutes read
+          </div>
+
+          <p>
+            The things in our control are by nature free, unrestrained, unhindered; but those not in our control are weak, slavish, restrained, belonging to others. Remember, then, that if you suppose that things which are slavish by nature are also free, and that what belongs to others is your own, then you will be hindered. You will lament, you will be disturbed, and you will find fault both with gods and men.
+          </p>
+
+          <p>
+            But if you suppose that only to be your own which is your own, and what belongs to others such as it really is, then no one will ever compel you or restrain you. Further, you will find fault with no one or accuse no one. You will do nothing against your will. No one will hurt you, you will have no enemies, and you not be harmed.
+          </p>
+
+          <pre class="bg-light rounded text-darkblue p-3 my-5">class HelloMessage extends React.Component {
+  render() {
+    return (
+      &lt;div>
+        Hello {this.props.name}
+      &lt;/div>
+    );
+  }
+}
+
+ReactDOM.render(
+  &lt;HelloMessage name="Taylor" />,
+  document.getElementById('hello-example')
+);</pre>
+
+          <h4 class="mt-5">
+            Step by step
+          </h4>
+
+          <ul class="mt-4">
+            <li class="mb-2">
+              Gather requirements for new payment integrations and product features, plan and code the implementation and manage its rollout.  
+            </li>
+            <li class="mb-2">
+              Write scalable and maintainable production code.
+            </li>
+            <li class="mb-2">
+              Keep up with latest back-end trends.
+            </li>
+            <li>
+              Integrate with other teams throughout the company to help develop solutions.
+            </li>
+          </ul>
+
+          <p class="mt-5">
+            Instead, you must entirely quit some things and for the present postpone the rest. But if you would both have these great things, along with power and riches, then you will not gain even the latter, because you aim at the former too: but you will absolutely fail of the former, by which alone happiness and freedom are achieved.
+          </p>
+
+          <p>
+            Of all things which wisdom provides to make life entirely happy, much the greatest is the possession of friendship. It is not so much our friends' help that helps us, as the confidence of their help.
+          </p>
+
+          <!-- Article helpful? -->
+          <div class="d-flex border-top border-bottom border-gray-200 py-4 mt-6">
+            <p class="mt-2 mr-3 mb-0 text-secondary">
+              Was this article helpful?
+            </p>
+            <a href="#" class="icon-circle bg-light text-primary hover-lift-light mr-2">
+              <i class="fas fa-thumbs-up"></i>
+            </a>
+            <a href="#" class="icon-circle bg-light text-primary hover-lift-light">
+              <i class="fas fa-thumbs-down"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-3 mt-5 mt-lg-0">
+          <aside class="bg-light rounded p-4">
+            <a href="#">
+              Contact support
+            </a>
+
+            <p class="text-muted font-size-sm mt-1">
+              Get help 24x7 from our staff
+            </p>
+
+            <h6 class="border-top border-gray-200 pt-4 mt-4 mb-3">
+              Related articles
+            </h6>
+
+            <a href="#" class="d-block font-size-sm mb-3">
+              How do I setup my account?
+            </a>
+            <a href="#" class="d-block font-size-sm mb-3">
+              How do I switch to a paid plan?
+            </a>
+            <a href="#" class="d-block font-size-sm mb-3">
+              What is this product?
+            </a>
+            <a href="#" class="d-block font-size-sm mb-3">
+              How do I update my password?
+            </a>
+            <a href="#" class="d-block font-size-sm mb-3">
+              Is there a cancellation fee?
+            </a>
+            <a href="#" class="d-block font-size-sm">
+              How many projects can I have?
+            </a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('./partials/footer.html', { "classList": "footer footer-dark bg-dark mt-8" })
+  @@include('./partials/scripts.html')
+</body>
+</html>

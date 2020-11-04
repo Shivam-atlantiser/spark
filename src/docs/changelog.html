@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Changelog | Inertia Docs"
+})
+<body>
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top",
+    "boxed": false,
+    "logo": "../assets/img/svg/logo-docs.svg"
+  })
+
+  <div class="container-fluid container-docs">
+    <div class="row">
+      @@include('../partials/docs-sidebar.html')
+
+      <div class="col-12 col-lg-9 col-xl-8 offset-lg-3 offset-xl-2 py-lg-5 px-lg-6">
+        <h3 class="text-darkblue">
+          Changelog
+        </h3>
+
+        <div class="text-uppercase letter-spacing-lg font-size-sm text-darkblue mt-5">
+          <span class="badge bg-purple font-weight-bold mr-2">2.0.0</span> Oct 27, 2020
+        </div>
+        <ul class="mt-4">
+          <li class="mb-1">
+            Released <span class="bg-pistachio p-1">Bootstrap 5</span> version. <small>(currently using v5.0.0-alpha2)</small>
+          </li>
+          <li class="mb-1">
+            Added ES6 support via gulp-babel.
+          </li>
+        </ul>
+
+        <div class="text-uppercase letter-spacing-lg font-size-sm text-darkblue mt-5">
+          <span class="badge bg-purple font-weight-bold mr-2">1.2.0</span> Sep 18, 2020
+        </div>
+        <ul class="mt-4">
+          <li class="mb-1">
+            Released <span class="bg-pistachio p-1">4 new</span> pages for user account management <small>(for both LTR and RTL)</small>
+            <ul class="mt-3">
+              <li>
+                account-general.html
+              </li>
+              <li>
+                account-notifications.html
+              </li>
+              <li>
+                account-billing.html
+              </li>
+              <li>
+                account-teammates.html
+              </li>
+            </ul>
+          </li>
+          <li class="mt-3">
+            SCSS files that have changes:
+            <ul class="font-size-sm mt-1">
+              <li>assets/scss/_variables.scss</li>
+              <li>assets/scss/custom/_components.scss</li>
+              <li>assets/scss/custom/components/_cards.scss</li>
+              <li>assets/scss/custom/components/_lists.scss (this is a new file)</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="text-uppercase letter-spacing-lg font-size-sm text-darkblue mt-5">
+          <span class="badge bg-purple font-weight-bold mr-2">1.1.0</span> Sep 1, 2020
+        </div>
+        <ul class="mt-4">
+          <li class="mb-1">
+            Released full RTL supported version.
+          </li>
+        </ul>
+
+        <div class="text-uppercase letter-spacing-lg font-size-sm text-darkblue mt-5">
+          <span class="badge bg-purple font-weight-bold mr-2">1.0.0</span> Initial release
+        </div>
+        <ul class="mt-4">
+          <li class="mb-1">
+            We're just getting started, all feedback for the next updates is greatly appreciated!
+          </li>
+          <li class="mb-1">
+            What pages, demos, landings, components would you like to see added?
+          </li>
+          <li>
+            Our goal is to keep growing while maintaining great quality.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  @@include('../partials/scripts.html')
+</body>
+</html>

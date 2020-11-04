@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Support | Inertia"
+})
+<body class="rtl bg-light">
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100",
+    "boxed": true,
+    "rtl": true,
+    "logo": "../assets/img/svg/logo-support.svg"
+  })
+
+  <!-- Search form and categories -->
+  <section class="pt-8 pt-md-9 fx-fade-in">
+    <div class="container text-right">
+      <h2 class="text-dark font-weight-normal">
+        How can we help?
+      </h2>
+
+      <!-- Form -->
+      <form class="mt-4">
+        <div class="input-group input-group-lg shadow-light-sm">
+          <span class="input-group-text border-0">
+            <i class="fas fa-search fa-xs text-secondary mb-1"></i>
+          </span>
+
+          <input type="text" class="form-control border-0 px-1" placeholder="Search help topics...">
+
+          <span class="input-group-text border-0 py-1 pr-2">
+            <button type="submit" class="btn btn-success text-uppercase-bold-sm">
+              Search
+            </button>
+          </span>
+        </div>
+      </form>
+
+      <!-- Categories -->
+      <div class="row mt-6">
+        <div class="col-12 mb-4">
+          <span class="badge bg-pastel-primary text-primary text-uppercase font-weight-bold">
+            Topic categories
+          </span>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/trending-up-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Statistics
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/calendar-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Calendar
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/chatbubbles-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Conversations
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/paper-plane-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Messages
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/pricetags-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Pricing
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/hammer-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Settings
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/cash-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Payments
+            </span>
+          </a>
+        </div>
+
+        <!-- Category -->
+        <div class="col-md-3 mb-4">
+          <a href="support-topic.html" class="card align-items-center text-decoration-none shadow-light-sm hover-lift-light py-4">
+            <span class="icon-circle icon-circle-lg bg-pastel-purple text-dark">
+              @@include("../assets/img/ionicons/lock-closed-outline.svg")
+            </span>
+            <span class="text-dark mt-3">
+              Security
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mt-6 fx-fade-in">
+    <div class="container text-right">
+      <span class="badge bg-pastel-primary text-primary text-uppercase font-weight-bold">
+        Frequently Asked Questions
+      </span>
+
+      <div class="row mt-4">
+        <!-- Left side -->
+        <div class="col-md-6">
+          <div class="card shadow-light-sm">
+            <h6 class="text-center p-4 m-0">
+              <span class="svg-icon relative-top--1 mr-1">
+                @@include("../assets/img/ionicons/settings-outline.svg")
+              </span>
+              Account Issues
+            </h6>
+
+            <!-- Accordion -->
+            <div id="accordion1">
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse1" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse1">
+                  Where can I see my billing information?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse1" class="collapse" data-parent="#accordion1">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse2" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse2">
+                  How can I upgrade my account?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse2" class="collapse" data-parent="#accordion1">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse3" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse3">
+                  Where can I add more projects?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse3" class="collapse" data-parent="#accordion1">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse4" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse4">
+                  Where can I reset my password?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse4" class="collapse" data-parent="#accordion1">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="card shadow-light-sm">
+            <h6 class="text-center p-4 m-0">
+              <span class="svg-icon relative-top--1 mr-1">
+                @@include("../assets/img/ionicons/file-tray-outline.svg")
+              </span>
+              Projects
+            </h6>
+
+            <div id="accordion2">
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse5" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse5">
+                  How can I invite my teammates?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse5" class="collapse" data-parent="#accordion2">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse6" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse6">
+                  Can I get a refund?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse6" class="collapse" data-parent="#accordion2">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse7" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse7">
+                  Can I pay with debit card?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse7" class="collapse" data-parent="#accordion2">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Question -->
+              <div class="border-top border-gray-200 p-4">
+                <a href="#collapse8" class="text-dark d-block text-decoration-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapse8">
+                  Can I recover an archived project?
+                  <i class="fas fa-chevron-down fa-xs collapse-icon float-left mt-2"></i>
+                </a>
+
+                <div id="collapse8" class="collapse" data-parent="#accordion2">
+                  <p class="font-size-sm mt-3">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                  </p>
+                  <p class="font-size-sm m-0">
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help options -->
+  <section class="mt-8 fx-fade-in">
+    <div class="container text-right">
+      <span class="badge bg-pastel-primary text-primary text-uppercase font-weight-bold">
+        Get help or report a problem
+      </span>
+
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <div class="d-flex">
+            <div class="svg-icon svg-icon-lg text-muted ml-3">
+              @@include("../assets/img/stockholm/Communication/Mail-opened.svg")
+            </div>
+            <div class="flex-1">
+              <h4>
+                Can't find what you need?
+              </h4>
+              <p class="text-secondary mt-3">
+                For in-depth questions, you can file a <a href="#">support ticket</a> to get answered personally by us.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="d-flex">
+            <div class="svg-icon svg-icon-lg text-muted ml-3">
+              @@include("../assets/img/stockholm/Communication/Chat-6.svg")
+            </div>
+            <div class="flex-1">
+              <h4>
+                Ask the community
+              </h4>
+              <p class="text-secondary mt-3">
+                Ask a question, share your expertise, and engage with other users in <a href="#">the user forum</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-dark bg-dark mt-8" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

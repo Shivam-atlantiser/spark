@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Account | Inertia"
+})
+<body class="bg-light">
+  @@include('../partials/navbar-ecommerce.html')
+
+  <section class="mt-4 mt-md-5">
+    <div class="container border-bottom border-gray-200 pb-7">
+      <div class="row">
+        <!-- Account tabs -->
+        <div class="col-lg-3">
+          <h5 class="text-center text-lg-left">
+            My account
+          </h5>
+          <div class="nav flex-lg-column justify-content-center nav-pills mt-4 mt-lg-5" role="tablist" aria-orientation="vertical">
+            <a class="nav-link text-dark active mb-2" id="wishlist-tab" data-toggle="pill" href="#wishlist" role="tab" aria-controls="wishlist" aria-selected="true">
+              <i class="far fa-heart mr-2 d-none d-md-inline-block"></i>
+              Wishlist
+            </a>
+            <a class="nav-link text-dark mb-2" id="orders-tab" data-toggle="pill" href="#orders" role="tab" aria-controls="orders" aria-selected="false">
+              <i class="far fa-paper-plane mr-2 d-none d-md-inline-block"></i>
+              Orders
+            </a>
+            <a class="nav-link text-dark" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+              <i class="far fa-user mr-2 d-none d-md-inline-block"></i>
+              Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Tabs content -->
+        <div class="col-lg-9">
+          <div class="tab-content">
+            <!-- Wishlist pane -->
+            <div class="tab-pane fade show active px-3" id="wishlist" role="tabpanel" aria-labelledby="wishlist-tab">
+              <div class="text-right mt-2">
+                <select class="form-select w-200 d-none d-md-inline">
+                  <option>Date added</option>
+                  <option>Price (ascending)</option>
+                  <option>Price (descending)</option>
+                </select>
+              </div>
+              <div class="table-responsive">
+                <table class="table w-650 w-md-100 mt-4">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="product.html">
+                          <img src="../assets/img/ecommerce/p-1.jpeg" class="img-fluid" alt="" style="max-width:100px;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="text-dark">Blue Elegant Pull-over Shirt</a>
+                        <div class="text-warning fa-xs mt-1">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                        </div>
+                        <p class="text-dark mt-2">$169.00</p>
+                      </td>
+                      <td>
+                        <span class="badge bg-pastel-success text-success">In Stock</span>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-dark btn-sm hover-lift-light">Add to cart</a>
+                        <a href="#" class="float-right text-dark h5 ml-2" data-toggle="tooltip" title="Remove from wishlist">
+                          <i class="fas fa-times fa-xs"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="product.html">
+                          <img src="../assets/img/ecommerce/p-3.jpeg" class="img-fluid" alt="" style="max-width:100px;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="text-dark">Long-sleeve Formal Shirt for Men</a>
+                        <div class="text-warning fa-xs mt-1">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-dark mt-2">$799.00</p>
+                      </td>
+                      <td>
+                        <span class="badge bg-pastel-success text-success">In Stock</span>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-dark btn-sm hover-lift-light">Add to cart</a>
+                        <a href="#" class="float-right text-dark h5 ml-2" data-toggle="tooltip" title="Remove from wishlist">
+                          <i class="fas fa-times fa-xs"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="product.html">
+                          <img src="../assets/img/ecommerce/p-2.jpeg" class="img-fluid" alt="" style="max-width:100px;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="text-dark">Big backpack</a>
+                        <div class="text-warning fa-xs mt-1">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-dark mt-2">$399.99</p>
+                      </td>
+                      <td>
+                        <span class="badge bg-pastel-dark text-dark">Out of Stock</span>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-dark btn-sm hover-lift-light">Add to cart</a>
+                        <a href="#" class="float-right text-dark h5 ml-2" data-toggle="tooltip" title="Remove from wishlist">
+                          <i class="fas fa-times fa-xs"></i>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="product.html">
+                          <img src="../assets/img/ecommerce/p-5.jpeg" class="img-fluid" alt="" style="max-width:100px;">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="product.html" class="text-dark">Large size formal shoes</a>
+                        <div class="text-warning fa-xs mt-1">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half"></i>
+                        </div>
+                        <p class="text-dark mt-2">$149.99</p>
+                      </td>
+                      <td>
+                        <span class="badge bg-pastel-success text-success">In Stock</span>
+                      </td>
+                      <td>
+                        <a href="#" class="btn btn-dark btn-sm hover-lift-light">Add to cart</a>
+                        <a href="#" class="float-right text-dark h5 ml-2" data-toggle="tooltip" title="Remove from wishlist">
+                          <i class="fas fa-times fa-xs"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Orders pane -->
+            <div class="tab-pane fade px-3" id="orders" role="tabpanel" aria-labelledby="orders-tab">
+              <div class="text-right">
+                <select class="form-select w-200 mt-2">
+                  <option>Last 6 months</option>
+                  <option>Last 3 months</option>
+                  <option>All orders</option>
+                </select>
+              </div>
+              <div class="table-responsive">
+                <table class="table mt-4">
+                  <thead>
+                    <tr>
+                      <th>Order ID</th>
+                      <th>Date</th>
+                      <th>Items</th>
+                      <th>Total Price</th>
+                      <th class="text-center">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#12083</a></td>
+                      <td class="font-size-sm">
+                        13 July, 2020
+                      </td>
+                      <td>3</td>
+                      <td>$1,999</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-info text-info">Shipping</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#86529</a></td>
+                      <td class="font-size-sm">
+                        21 March, 2020
+                      </td>
+                      <td>4</td>
+                      <td>$3,299</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-success text-success">Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#67458</a></td>
+                      <td class="font-size-sm">
+                        03 February, 2020
+                      </td>
+                      <td>3</td>
+                      <td>$2,459</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-danger text-danger">Canceled</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#16274</a></td>
+                      <td class="font-size-sm">
+                        10 February, 2020
+                      </td>
+                      <td>1</td>
+                      <td>$299</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-success text-success">Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#75827</a></td>
+                      <td class="font-size-sm">
+                        27 January, 2020
+                      </td>
+                      <td>5</td>
+                      <td>$5,789</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-success text-success">Delivered</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#57825</a></td>
+                      <td class="font-size-sm">
+                        05 January, 2020
+                      </td>
+                      <td>4</td>
+                      <td>$3,999</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-primary text-primary">Processing</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><a href="account-invoice.html" class="text-purple">#38012</a></td>
+                      <td class="font-size-sm">
+                        18 December, 2019
+                      </td>
+                      <td>2</td>
+                      <td>$2,099</td>
+                      <td class="text-center">
+                        <span class="badge bg-pastel-success text-success">Delivered</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Profile pane -->
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row mt-5">
+                <div class="col-md-4 text-center">
+                  <img src="../assets/img/uifaces/12.jpg" class="rounded-circle d-block mx-auto" alt="">
+                  <a href="#" class="btn btn-purple btn-sm mt-3">
+                    Upload new avatar
+                  </a>
+                </div>
+                <div class="col-md-8 mt-4 mt-md-0">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Full name</label>
+                      <input type="email" class="form-control border-gray-200">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Email address</label>
+                      <input type="email" class="form-control border-gray-200">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Phone number</label>
+                      <input type="text" class="form-control border-gray-200">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Address</label>
+                      <input type="text" class="form-control border-gray-200">
+                    </div>
+                    <h6 class="mt-4 mb-3">
+                      Update password
+                    </h6>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Password</label>
+                      <input type="password" class="form-control border-gray-200">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label text-gray-700">Confirm Password</label>
+                      <input type="password" class="form-control border-gray-200">
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block mt-4 hover-lift-light">Save my info</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-light bg-light mt-5" })
+  @@include('../partials/scripts.html')
+</body>
+</html>

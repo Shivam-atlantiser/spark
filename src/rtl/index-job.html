@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+@@include('../partials/header.html', {
+  "title": "Landing jobs directory | Inertia"
+})
+<body class="rtl bg-light">
+  @@include('../partials/navbar.html', {
+    "classList": "navbar navbar-expand-lg navbar-light bg-transparent position-absolute w-100",
+    "boxed": true,
+    "rtl": true
+  })
+
+  <!-- Hero -->
+  <section class="bg-pistachio bg-topography-light pt-8 pt-md-10">
+    <div class="container d-flex flex-column text-center">
+      <!-- Title -->
+      <h1 class="display-4 text-dark font-weight-normal mb-0 fx-fade-up">
+        Grow your career. Find
+      </h1>
+      <h1 class="display-4 text-dark font-weight-normal mb-6 mb-md-7 fx-fade-up animation-delay-2">
+        your <span class="text-success">dream job.</span>
+      </h1>
+
+      <!-- Search form -->
+      <form class="bg-white d-flex flex-column flex-lg-row align-items-center shadow-light-sm p-3 mb-n5 fx-fade-up animation-delay-4">
+        <!-- Text -->
+        <div class="w-lg-50 input-group border-left border-gray-200 pl-lg-4">
+          <span class="input-group-text border-0">
+            <i class="fas fa-search text-muted"></i>
+          </span>
+          <input type="text" class="form-control rounded border-0 border-gray-300 px-lg-1" placeholder="Job position or description...">
+        </div>
+
+        <!-- Country -->
+        <select class="w-lg-30 form-select rounded border-0 border-gray-300 mx-lg-4 mt-3 mt-lg-0">
+          <option>Worldwide</option>
+          <option>Australia</option>
+          <option>Belgium</option>
+          <option>Canada</option>
+          <option>Denmark</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>Iceland</option>
+          <option>India</option>
+          <option>Japan</option>
+          <option>Mexico</option>
+          <option>Norway</option>
+          <option>Sweden</option>
+          <option>UK</option>
+          <option>United States</option>
+        </select>
+
+        <!-- Submit -->
+        <button type="button" class="w-lg-20 btn btn-darkblue btn-lg text-uppercase-bold-sm hover-lift-light mt-3 mt-lg-0">
+          Search jobs
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Companies -->
+  <section class="mt-9 fx-fade-up animation-delay-6">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <h4>
+          Featured companies
+        </h4>
+        <a href="#!" class="mr-md-auto">
+          See all companies
+          <i class="fa fa-arrow-left fa-xs mr-2"></i>
+        </a>
+      </div>
+
+      <div class="row mt-5">
+        <!-- Company -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a href="#!" class="card h-100 text-decoration-none hover-lift-light">
+            <span class="card-body text-right d-flex flex-column">
+              <span class="text-dark d-block mb-4 pb-2" style="width: 140px;">
+                @@include("../assets/img/svg/basecamp.svg")
+              </span>
+              <p class="text-dark">
+                Basecamp is a web-based project management tool launched in 2004. Its primary features are to-do lists, forum-like messaging, file sharing, and time tracking.
+              </p>
+              <span class="d-flex align-items-center text-dark mt-auto">
+                <span class="badge bg-pastel-purple text-purple badge-lg ml-auto">
+                  3 jobs
+                </span>
+                <span class="font-size-sm text-muted mr-2">
+                  Operations
+                  <span class="mx-2">·</span>
+                  Remote
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a href="#!" class="card h-100 text-decoration-none hover-lift-light">
+            <span class="card-body text-right d-flex flex-column">
+              <span class="d-block mt-n3 mb-3" style="width: 60px;color: #00acee">
+                @@include("../assets/img/svg/twitter.svg")
+              </span>
+              <p class="text-dark">
+                Twitter is an American microblogging and social networking service on which users post and interact with messages known as "tweets".
+              </p>
+              <span class="d-flex align-items-center text-dark mt-auto">
+                <span class="badge bg-pastel-purple text-purple badge-lg ml-auto">
+                  12 jobs
+                </span>
+                <span class="font-size-sm text-muted mr-2">
+                  Marketing
+                  <span class="mx-2">·</span>
+                  Dublin
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <!-- Company -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <a href="#!" class="card h-100 text-decoration-none hover-lift-light">
+            <span class="card-body text-right d-flex flex-column">
+              <span class="d-block mt-n1 mb-4 pb-1" style="width: 80px;color: #32325d">
+                @@include("../assets/img/svg/stripe.svg")
+              </span>
+              <p class="text-dark">
+                Stripe is an American technology company based in San Francisco, California. Its software allows individuals and businesses to make and receive payments over the Internet.
+              </p>
+              <span class="d-flex align-items-center text-dark mt-auto">
+                <span class="badge bg-pastel-purple text-purple badge-lg ml-auto">
+                  4 jobs
+                </span>
+                <span class="font-size-sm text-muted mr-2">
+                  Design
+                  <span class="mx-2">·</span>
+                  London
+                </span>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire people-->
+  <section class="mt-7 mt-lg-9">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-md-right">
+          <h3>
+            Hire the best people
+          </h3>
+
+          <p class="text-muted lead mt-1">
+            Join our worldwide startup community.
+          </p>
+
+          <div class="d-flex mt-5 mt-lg-6">
+            <div class="icon-circle icon-circle-lg bg-darkblue text-white d-none d-md-flex">
+              <span class="h5 m-0">01</span>
+            </div>
+            <div class="flex-1 mr-md-4">
+              <h5 class="text-darkblue">
+                <span class="svg-icon">
+                  @@include("../assets/img/ionicons/remove-outline.svg")
+                </span>
+                Set up your profile
+              </h5>
+              <p class="text-muted">
+                Create your startup account, add your information and your available positions.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex mt-4 mt-lg-5">
+            <div class="icon-circle icon-circle-lg bg-darkblue text-white d-none d-md-flex">
+              <span class="h5 m-0">02</span>
+            </div>
+            <div class="flex-1 mr-md-4">
+              <h5 class="text-darkblue">
+                <span class="svg-icon">
+                  @@include("../assets/img/ionicons/remove-outline.svg")
+                </span>
+                Respond to job inquiries
+              </h5>
+              <p class="text-muted">
+                We will notify you whenever someone responds to one of your positions.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex mt-4 mt-lg-5">
+            <div class="icon-circle icon-circle-lg bg-darkblue text-white d-none d-md-flex">
+              <span class="h5 m-0">03</span>
+            </div>
+            <div class="flex-1 mr-md-4">
+              <h5 class="text-darkblue">
+                <span class="svg-icon">
+                  @@include("../assets/img/ionicons/remove-outline.svg")
+                </span>
+                Grow your startup
+              </h5>
+              <p class="text-muted">
+                Our system will match you with the best candidates in our ever-expanding community.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 pl-lg-5 mt-5 mt-lg-0">
+          <div class="rounded bg-cover h-350 h-md-600 shadow-light hover-lift-light" data-toggle="zoomerang" style="width:100%;background-image: url('../assets/img/unsplash/24.jpeg');"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="mt-9">
+    <div class="container">
+      <h3 class="text-center">
+        They already found their dream job
+      </h3>
+
+      <div class="row mt-6">
+        <div class="col-md-6">
+          <!-- Quote -->
+          <div class="bg-white position-relative text-right py-5 px-4 px-md-5">
+            <div class="avatar avatar-lg position-absolute top-0 right-0 mt-n4">
+              <img src="../assets/img/uifaces/14.jpg" class="avatar-image rounded-circle" alt="">
+            </div>
+            <div class="text-warning fa-xs my-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="lead text-darkblue mt-3">
+              “If anyone tells you that a certain person speaks ill of you, do not make excuses about what is said of you but answer, "He was ignorant of my other faults, else he would not have mentioned these alone.”
+            </p>
+            <div class="text-dark font-weight-bolder font-size-sm">
+              Bob Dylan, Co-Founder
+            </div>
+          </div>
+
+          <!-- Quote -->
+          <div class="bg-white position-relative text-right py-5 px-4 px-md-5 mt-6">
+            <div class="avatar avatar-lg position-absolute top-0 right-0 mt-n4">
+              <img src="../assets/img/uifaces/9.jpg" class="avatar-image rounded-circle" alt="">
+            </div>
+            <div class="text-warning fa-xs my-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="lead text-darkblue mt-3">
+              “Don't demand that things happen as you wish, but wish that they happen as they do happen, and you will go on well.”
+            </p>
+            <div class="text-dark font-weight-bolder font-size-sm">
+              Floor Jansen, Head of Design
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Quote -->
+          <div class="bg-white position-relative text-right py-5 px-4 px-md-5 mt-6 mt-md-9">
+            <div class="avatar avatar-lg position-absolute top-0 right-0 mt-n4">
+              <img src="../assets/img/uifaces/7.jpg" class="avatar-image rounded-circle" alt="">
+            </div>
+            <div class="text-warning fa-xs my-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="lead text-darkblue mt-3">
+              “How long are you going to wait before you demand the best for yourself and in no instance bypass the discriminations of reason? You have been given the principles that you ought to endorse, and you have endorsed them.”
+            </p>
+            <div class="text-dark font-weight-bolder font-size-sm">
+              Tarja Turunen, Mobile Developer
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jobs -->
+  <section class="mt-8 mt-lg-9">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center mb-5">
+        <div class="text-center text-md-right">
+          <h4>
+            Featured recent positions
+          </h4>
+          <p class="text-muted">
+            We think these jobs might be of your interest.
+          </p>
+        </div>
+        <a href="#!" class="mr-md-auto">
+          See all positions
+          <i class="fa fa-arrow-left fa-xs mr-2"></i>
+        </a>
+      </div>
+
+      <!-- Job -->
+      <div class="row align-items-center text-right bg-white mb-4 py-5 px-4">
+        <div class="col-lg-2">
+          <div style="width:130px;">
+            @@include("../assets/img/svg/basecamp.svg")
+          </div>
+        </div>
+        <div class="col-lg-7 mt-4 mt-lg-0">
+          <a href="#!" class="h5 text-darkblue d-block">
+            Software Programmer (Remote)
+          </a>
+          <p class="text-muted mt-2 mb-0">
+            Join our programming team to work on the main product
+          </p>
+        </div>
+        <div class="col-lg-3 text-lg-center mt-4 mt-lg-0">
+          <a href="#!" class="btn btn-sm btn-pastel-purple text-uppercase-bold-sm hover-lift-light">
+            Read more
+          </a>
+          <div class="font-size-sm text-muted mt-3">
+            Full time
+            <span class="mx-2">·</span>
+            Anywhere
+          </div>
+        </div>
+      </div>
+
+      <!-- Job -->
+      <div class="row align-items-center text-right bg-white mb-4 py-5 px-4">
+        <div class="col-lg-2">
+          <div style="width:70px;color: #00acee">
+            @@include("../assets/img/svg/twitter.svg")
+          </div>
+        </div>
+        <div class="col-lg-7 mt-4 mt-lg-0">
+          <span class="badge bg-success font-weight-bold letter-spacing-lg">NEW</span>
+          <a href="#!" class="h5 text-darkblue d-block mt-3">
+            Content Marketing Lead
+          </a>
+          <p class="text-muted mt-2 mb-0">
+            Help us design our dashboard and internal platforms
+          </p>
+        </div>
+        <div class="col-lg-3 text-lg-center mt-4 mt-lg-0">
+          <a href="#!" class="btn btn-sm btn-pastel-purple text-uppercase-bold-sm hover-lift-light">
+            Read more
+          </a>
+          <div class="font-size-sm text-muted mt-3">
+            Freelance
+            <span class="mx-2">·</span>
+            New York
+          </div>
+        </div>
+      </div>
+
+      <!-- Job -->
+      <div class="row align-items-center text-right bg-white mb-4 py-5 px-4">
+        <div class="col-lg-2">
+          <div style="width:80px;color: #32325d">
+            @@include("../assets/img/svg/stripe.svg")
+          </div>
+        </div>
+        <div class="col-lg-7 mt-4 mt-lg-0">
+          <a href="#!" class="h5 text-darkblue d-block">
+            Lead UI Designer (Remote)
+          </a>
+          <p class="text-muted mt-2 mb-0">
+            Work with our design team to improve our visual systems
+          </p>
+        </div>
+        <div class="col-lg-3 text-lg-center mt-4 mt-lg-0">
+          <a href="#!" class="btn btn-sm btn-pastel-purple text-uppercase-bold-sm hover-lift-light">
+            Read more
+          </a>
+          <div class="font-size-sm text-muted mt-3">
+            Full time
+            <span class="mx-2">·</span>
+            London / Anywhere
+          </div>
+        </div>
+      </div>
+
+      <!-- Job -->
+      <div class="row align-items-center text-right bg-white mb-4 py-5 px-4">
+        <div class="col-lg-2">
+          <div style="width:110px;color:#462d98">
+            @@include("../assets/img/svg/heroku.svg")
+          </div>
+        </div>
+        <div class="col-lg-7 mt-4 mt-lg-0">
+          <span class="badge bg-success font-weight-bold letter-spacing-lg">NEW</span>
+          <a href="#!" class="h5 text-darkblue d-block mt-3">
+            Data Scientist
+          </a>
+          <p class="text-muted mt-2 mb-0">
+            Design, analyze, and interpret data experiments
+          </p>
+        </div>
+        <div class="col-lg-3 text-lg-center mt-4 mt-lg-0">
+          <a href="#!" class="btn btn-sm btn-pastel-purple text-uppercase-bold-sm hover-lift-light">
+            Read more
+          </a>
+          <div class="font-size-sm text-muted mt-3">
+            Contract
+            <span class="mx-2">·</span>
+            Amsterdam
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe form -->
+  <section class="mt-7 mt-lg-8">
+    <div class="container">
+      <div class="row bg-pistachio bg-topography-light">
+        <form class="w-100 d-flex flex-column flex-lg-row align-items-center justify-content-between p-4 p-xl-5">
+          <h4 class="text-darkblue font-weight-normal my-3 my-xl-0">
+            Get all new
+          </h4>
+
+          <select class="form-select border-0 w-200 my-3 my-xl-0">
+            <option>Programming</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Data Science</option>
+            <option>Animation</option>
+            <option>Finance</option>
+            <option>Security</option>
+            <option>Infrastructure</option>
+          </select>
+
+          <h4 class="text-darkblue font-weight-normal my-3 my-xl-0">
+            positions sent to
+          </h4>
+
+          <input type="text" class="form-control form-control-lg border-0 w-200 my-3 my-xl-0" placeholder="your@email.com">
+
+          <button type="submit" class="btn btn-darkblue btn-lg hover-lift-light my-3 my-lg-0">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  @@include('../partials/footer.html', { "classList": "footer footer-dark bg-dark mt-8" })
+  @@include('../partials/scripts.html')
+</body>
+</html>
