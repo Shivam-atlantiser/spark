@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Spark</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="./assets/images/favicon.svg">
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/theme.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/vendor.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light w-100" role="navigation">
+    <div class="container-fluid position-relative ">
+      <div class="row w-100 align-items-center">
+        <div class="col-md-3">
+          <a class="navbar-brand" href="./index.html"><img src="./assets/images/banner-logo.png" alt=""></a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="col-md-6">
+          <div class="collapse navbar-collapse
+            justify-content-center mt-2 mt-lg-0" id="navbar-collapse">
+            <ul class="navbar-nav ">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  Services
+                  <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu pr-4" role="menu">
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <span class="text-uppercase font-size-sm text-darkblue
+                      font-weight-bold">
+                      Web product
+                    </span>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="business-listing.html">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="business-listing-sold.html">Closed
+                  Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="business-listing-sold.html">Resources</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="collapse navbar-collapse justify-content-end mt-2 mt-lg-0" id="navbar-collapse">
+
+            <ul class="navbar-nav ">
+              <li class="nav-item ml-lg-3 mt-3 mt-lg-0">
+                <a class="btn btn-dark hover-lift-light font-helvetica" href="#" target="_blank">
+                  Free Valuation
+                </a>
+              </li>
+              <li class="nav-item ml-lg-3 mt-3 mt-lg-0">
+                <a class="btn btn-primary border-dark font-helvetica
+              hover-lift-light" href="#" target="_blank">
+                  Sell Your Business
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="banner-section position-relative" style="">
+    <div class="container text-center py-lg-8 py-md-7 listing-banner">
+      <img src="./assets/images/banner-logo.png" alt="" class="listing-banner-img">
+      <div class="d-flex align-items-center justify-content-center mt-5 mb-4 banner-text banner-listing">
+        <h3 class=" fx-fade-up animation-delay-2 display-4 no-max-width mx-0 mb-0 banner-head">
+          Business Listing
+        </h3>
+        <div class="p-large text-primary ml-2 text-left fx-fade-up animation-delay-2 banner-sub-head">
+          Be the First to Know About New Listings
+        </div>
+      </div>
+      <form
+          class="bg-white d-flex flex-column flex-lg-row align-items-center fx-fade-up animation-delay-4 footer-newsletter">
+          <div class="w-lg-50 input-group border-gray-200 pr-lg-4">
+            <input type="email" class="form-control rounded border-0 border-gray-300 px-lg-1"
+              placeholder="Your Email Address">
+          </div>
+          <button type="button"
+            class="btn btn-primary justify-content-center btn-lg text-uppercase-bold-sm hover-lift mt-3 mt-lg-0 form-sm-btn">
+            <span>Register</span><i class="fas fa-chevron-right fa-xs hover-lift-icon ml-2"></i>
+          </button>
+        </form>
+    </div>
+  </section>
+
+
+  <section class="business-listing">
+    <div class="container">
+      <div class="listing-filter">
+        <ul class="paddng-0 list-unstyled text-uppercase d-flex filter-center">
+          <li><a class="filter-head" href="#">Price</a></li>
+          <li><a class="filter-head" href="#">High to low</a></li>
+          <li><a class="filter-head" href="#">All Sectors</a></li>
+        </ul>
+        <div class="mt-7 mt-lg-7 after-banner-space">
+          <div class="row align-items-stretch">
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg bg-darkblue shadow-lg highlight">
+                <div class="card-body">
+                  <div class="text-white h2 get-listing">
+                    Get listings as soon as they hit the market
+                    <img src="./assets/images/favicon.svg" class="ml-3" alt="">
+                  </div>
+                  <a href="#" class="btn btn-white hover-lift"><span class="get-listing-btn">Register</span><i class="fas fa-chevron-right fa-xs hover-lift-icon ml-2"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card rounded-lg shadow-lg">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="titlt">Retail Miscellaneous</div>
+                    <div class="product-status sell">
+                      For Sale
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Location:
+                      </div>
+                      <div class="item-desc">
+                        Hollywood, Florida
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        List Price:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $2,500,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Revenue:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $595,000
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="item-title">
+                        Income:
+                      </div>
+                      <div class="item-desc text-primary">
+                        $250,000
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-image">
+                    <img src="./assets/images/listing-item.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="load-more-box">
+    <p class="load">Load More</p>
+    <img src="./assets/images/arrow-down.svg" alt="load more"></img>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="footer footer-dark bg-dark">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-12 col-md-3 links">
+          <h6 class="footer-header">
+            Quick Links
+          </h6>
+          <a href="#" class="footer-link">
+            About us
+          </a>
+          <a href="#" class="footer-link">
+            Sell a Business
+          </a>
+          <a href="#" class="footer-link">
+            Buy a Business
+          </a>
+          <a href="#" class="footer-link">
+            How it Works
+          </a>
+        </div>
+
+        <div class="col-12 col-md mt-5 links mt-md-0 col-md-3">
+          <h6 class="footer-header">
+            Get in Touch
+          </h6>
+          <a href="#" class="footer-link">
+            Spark Business Brokers<br>401 North Michigan Ave.<br>401 North Michigan Ave.<br>Chicago, IL
+          </a>
+          <a href="mailto:team@sparkbusinessbrokers.com"
+            class="footer-link footer-mail">team@sparkbusinessbrokers.com</a>
+          <div class="d-flex ">
+            <a href="#" class="hover-lift-light text-decoration-none mr-2">
+              <span class=" footer-social-icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+            <a href="#" class="hover-lift-light text-decoration-none mx-2">
+              <span class=" footer-social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md mt-5 mt-md-0 footer-news-col">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="./assets/images/footer-logo.png" alt="">
+            </a>
+          </div>
+          <div class="footer-link mt-3">
+            Subscribe to our resource centre
+          </div>
+          <form
+            class="bg-white d-flex flex-column flex-lg-row align-items-center fx-fade-up animation-delay-4 footer-newsletter">
+            <div class="w-lg-50 input-group border-gray-200 pr-lg-4">
+              <input type="email" class="form-control rounded border-0 border-gray-300 px-lg-1"
+                placeholder="Your Email Address">
+            </div>
+            <button type="button"
+              class="btn btn-primary justify-content-center btn-lg text-uppercase-bold-sm hover-lift mt-3 mt-lg-0">
+              <span>Subscribe</span><i class="fas fa-chevron-right fa-xs hover-lift-icon ml-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  </footer>
+
+  <!-- JAVASCRIPT
+  ============================================-->
+  <!-- Comment the following line if you prefer vendors broken down -->
+  <script src="./assets/js/vendor.min.js"></script>
+
+  <!-- Uncomment these lines if you prefer vendors broken down -->
+  <!-- <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./assets/vendor/pikaday/pikaday.js"></script>
+  <script src="./assets/vendor/jquery.elevateZoom/jquery.elevateZoom.min.js"></script>
+  <script src="./assets/vendor/smooth-scroll/smooth-scroll.min.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="./assets/vendor/jarallax/dist/jarallax-video.min.js"></script>
+  <script src="./assets/vendor/jarallax/dist/jarallax-element.min.js"></script>
+  <script src="./assets/vendor/zoomerang/zoomerang.js"></script>
+  <script src="./assets/vendor/swiper/swiper.min.js"></script>
+  <script src="./assets/vendor/highlight/highlight.min.js"></script>
+  <script src="./assets/vendor/atvImg/atvImg-min.js"></script> -->
+  <!-- Main Theme file -->
+  <script src="./assets/js/theme.min.js"></script>
+
+</body>
+
+</html>
