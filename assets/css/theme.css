@@ -3105,7 +3105,7 @@ textarea.form-control.is-invalid {
   -ms-user-select: none;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid #000;
   padding: 10px 22px;
   font-size: 1.0666666666666666667rem;
   border-radius: 100px;
@@ -22279,6 +22279,14 @@ body.rtl .breadcrumb-item:after {
   margin-bottom: .75rem;
 }
 
+.btn-border {
+  border: 1px solid black !important;
+}
+
+.sm-img-buy {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .card-columns {
     -moz-column-count: 3;
@@ -23460,7 +23468,6 @@ blockquote {
   margin-left: -30px;
   border-left: 8px solid #f47c21;
   font-size: 2.13333rem;
-  font-family: "Helvetica";
 }
 
 .blog-inner {
@@ -23551,13 +23558,20 @@ blockquote {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 112px;
+  padding-top: 120px;
 }
 
 .step-header img {
-  margin-bottom: 4.533333rem;
+  margin-bottom: 55px;
   max-width: 55px;
   width: 100%;
+}
+
+.sell-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 40px;
 }
 
 .no-max-width {
@@ -23803,6 +23817,34 @@ blockquote {
   line-height: 30px;
   margin-top: 15px;
   margin-bottom: 23px;
+}
+
+.tab-styles {
+  font-size: 27px;
+  line-height: 33px;
+  width: 100%;
+}
+
+.tab-links {
+  width: 33.33%;
+  border: 1px solid var(--bs-darkblue);
+}
+
+#tab-selected {
+  background-color: var(--bs-darkblue);
+  color: #fff;
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+}
+
+.display-sm {
+  display: none;
+}
+.sm-browse-box{
+  display: none;
+}
+.browse-box-lg{
+  display: block;
 }
 
 @media screen and (max-width: 576px) {
@@ -24388,6 +24430,283 @@ blockquote {
     text-align: center;
     font-size: 24px;
     line-height: 140%;
+  }
+
+  .tab-styles {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .tab-links {
+    padding: 10px 0px !important;
+  }
+
+  #tab-selected {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+  }
+
+  .step-header {
+    padding-top: 60px;
+  }
+
+  .step-header img {
+    margin-bottom: 44px;
+  }
+
+  .sell-desc {
+    font-size: 14px;
+    padding: 0 28px;
+  }
+
+  .sell-business-steps {
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sell-business-steps::before {
+    right: 300px;
+  }
+
+  .sell-business-steps .step-card {
+    margin-bottom: 55px;
+  }
+
+  .sell-business-steps .step-card .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .sell-business-steps .step-card .desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .sell-business-steps {
+    max-width: 296px;
+    margin: 0 24px 0px 47px !important;
+  }
+
+  .background-border {
+    border: 1px solid var(--bs-darkblue);
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+  }
+
+  .about-img {
+    display: none !important;
+  }
+
+  .valuation-head {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  .valuation-sub-head {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .valuation-img {
+    width: 240px;
+    height: 44px;
+  }
+
+  .box-val {
+    border-radius: 20px !important;
+  }
+
+  .contact-form-page .form-c {
+    padding: unset;
+    margin-top: 20px !important;
+  }
+
+  .display-sm {
+    display: block;
+  }
+
+  .display-sm-2 {
+    display: none;
+  }
+
+  .contact-sm {
+    margin-top: 20px !important;
+  }
+
+  .banner-image {
+    min-height: 238px;
+  }
+
+  .single-blog-margin {
+    margin-top: 0 !important;
+    margin-bottom: 60px !important;
+  }
+
+  .blog-text-space {
+    margin-top: 2rem !important;
+  }
+
+  .single-blog-margin blockquote {
+    font-size: 20px;
+    line-height: 140%;
+    margin-left: 0px;
+  }
+
+  .recommended {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 55px;
+    margin-bottom: 3rem !important;
+  }
+
+  .recommend-margin {
+    margin-top: 6rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 60px !important;
+  }
+
+  .recommend-img {
+    width: 352px;
+    height: 255px;
+    border-radius: 40px !important;
+  }
+
+  .recommend-after-img {
+    margin-top: 15px !important;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .blog-business {
+    font-weight: 700 !important;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .subscribe-margin {
+    margin-top: 35px !important;
+  }
+
+  .sale-buisiness-card {
+    padding: 4.5rem 1rem !important;
+    border-radius: 37px !important;
+    margin: 0px 40px;
+  }
+
+  .subscribe-margin-2 {
+    margin-top: 20px !important;
+    margin-bottom: 105px !important;
+  }
+
+  .sale-buiseness {
+    font-size: 30px;
+    line-height: 50px;
+  }
+
+  .display-mobile {
+    display: none;
+  }
+
+  .about-sm-contact {
+    margin-top: 15px !important;
+    margin-bottom: 145px;
+  }
+
+  .process-page {
+    margin-top: 148px;
+  }
+
+  .buying-process {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  .process-page .number {
+    font-size: 30px !important;
+    line-height: 37px !important;
+  }
+
+  .process-page .desc {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  .buy-process-step {
+    padding: 0 !important;
+    padding: 30px !important;
+
+  }
+
+  .buy-process-step [data-toggle="collapse"] {
+    padding: 0 !important;
+  }
+
+  .buy-process-step:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .buy-2-boxes-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .buy-business-listing .card.highlight .card-body {
+    padding: 45px 20px 30px 20px;
+  }
+
+  .buy-business-listing .card.highlight .card-body .h2 {
+    font-size: 26px !important;
+    line-height: 140% !important;
+  }
+
+  .sm-img-buy {
+    display: block;
+    margin-left: 0 !important;
+    margin-bottom: 45px;
+  }
+
+  .lg-img-buy {
+    display: none;
+  }
+
+  .margin-boxes {
+    margin: 0px 30px;
+  }
+
+  .buy-business-listing .card {
+    height: auto;
+    margin-bottom: 80px;
+  }
+  .margin-sm-box-3{
+    margin: 30px;
+  }
+  .browse-box{
+    font-size: 26px !important;
+    line-height: 140% !important;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .sm-browse-box{
+    display: block;
+    margin-bottom: 0 !important;
+
+  }
+  .browse-box-lg{
+    display: none;
   }
 
 }
